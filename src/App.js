@@ -5,8 +5,10 @@ import Map from './Map';
 
 function App() {
   const [content, setContent] = useState("");
+  const boardState = {}
+
   return (
-    <div style={{width: 700}}>
+    <div style={{width: 700, border: "1px solid black"}}>
       <Map setTooltipContent={setContent} />
       <ReactTooltip>{content}</ReactTooltip>
     </div>

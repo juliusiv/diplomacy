@@ -34234,7 +34234,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Albania"
+            "NAME": "Albania",
+            "ID": "ALBANIA"
           }
         },
         {
@@ -34249,7 +34250,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Armenia"
+            "NAME": "Armenia",
+            "ID": "ARMENIA"
           }
         },
         {
@@ -34266,7 +34268,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Austria"
+            "NAME": "Austria",
+            "ID": "AUSTRIA"
           }
         },
         {
@@ -34289,7 +34292,8 @@
           ],
           "type": "MultiPolygon",
           "properties": {
-            "NAME": "Azerbaijan"
+            "NAME": "Azerbaijan",
+            "ID": "AZERBAIJAN"
           }
         },
         {
@@ -34304,7 +34308,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Belgium"
+            "NAME": "Belgium",
+            "ID": "BELGIUM"
           }
         },
         {
@@ -34320,7 +34325,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Bulgaria"
+            "NAME": "Bulgaria",
+            "ID": "BULGARIA"
           }
         },
         {
@@ -34333,7 +34339,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Bosnia and Herz."
+            "NAME": "Bosnia and Herz.",
+            "ID": "BOSNIA_AND_HERZEGOVINA"
           }
         },
         {
@@ -34348,7 +34355,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Belarus"
+            "NAME": "Belarus",
+            "ID": "BELARUS"
           }
         },
         {
@@ -34362,7 +34370,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Switzerland"
+            "NAME": "Switzerland",
+            "ID": "SWITZERLAND"
           }
         },
         {
@@ -34374,7 +34383,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "N. Cyprus"
+            "NAME": "N. Cyprus",
+            "ID": "NORTH_CYPRUS"
           }
         },
         {
@@ -34386,7 +34396,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Cyprus"
+            "NAME": "Cyprus",
+            "ID": "CYPRUS"
           }
         },
         {
@@ -34400,7 +34411,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Czechia"
+            "NAME": "Czechia",
+            "ID": "CZECHIA"
           }
         },
         {
@@ -34421,7 +34433,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Germany"
+            "NAME": "Germany",
+            "ID": "GERMANY"
           }
         },
         {
@@ -34440,7 +34453,8 @@
           ],
           "type": "MultiPolygon",
           "properties": {
-            "NAME": "Denmark"
+            "NAME": "Denmark",
+            "ID": "DENMARK"
           }
         },
         {
@@ -34454,7 +34468,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Spain"
+            "NAME": "Spain",
+            "ID": "SPAIN"
           }
         },
         {
@@ -34467,7 +34482,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Estonia"
+            "NAME": "Estonia",
+            "ID": "ESTONIA"
           }
         },
         {
@@ -34481,7 +34497,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Finland"
+            "NAME": "Finland",
+            "ID": "FINLAND"
           }
         },
         {
@@ -34501,7 +34518,8 @@
           ],
           "type": "MultiPolygon",
           "properties": {
-            "NAME": "France"
+            "NAME": "France",
+            "ID": "FRANCE"
           }
         },
 
@@ -34515,7 +34533,8 @@
           ],
           "type": "MultiPolygon",
           "properties": {
-            "NAME": "Corse"
+            "NAME": "Corse",
+            "ID": "CORSE"
           }
         },
         {
@@ -34534,7 +34553,8 @@
           ],
           "type": "MultiPolygon",
           "properties": {
-            "NAME": "United Kingdom"
+            "NAME": "United Kingdom",
+            "ID": "UNITED_KINGDOM"
           }
         },
         {
@@ -34549,7 +34569,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Georgia"
+            "NAME": "Georgia",
+            "ID": "GEORGIA"
           }
         },
         {
@@ -34565,7 +34586,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Syria"
+            "NAME": "Syria",
+            "ID": "SYRIA"
           }
         },
         {
@@ -34587,7 +34609,8 @@
           ],
           "type": "MultiPolygon",
           "properties": {
-            "NAME": "Greece"
+            "NAME": "Greece",
+            "ID": "GREECE"
           }
         },
         {
@@ -34603,7 +34626,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Croatia"
+            "NAME": "Croatia",
+            "ID": "CROATIA"
           }
         },
         {
@@ -34620,7 +34644,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Hungary"
+            "NAME": "Hungary",
+            "ID": "HUNGARY"
           }
         },
         {
@@ -34632,7 +34657,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Ireland"
+            "NAME": "Ireland",
+            "ID": "IRELAND"
           }
         },
         {
@@ -34652,7 +34678,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Iran"
+            "NAME": "Iran",
+            "ID": "IRAN"
           }
         },
         {
@@ -34669,7 +34696,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Iraq"
+            "NAME": "Iraq",
+            "ID": "IRAQ"
           }
         },
         {
@@ -34680,7 +34708,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Iceland"
+            "NAME": "Iceland",
+            "ID": "ICELAND"
           }
         },
         {
@@ -34697,7 +34726,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Israel"
+            "NAME": "Israel",
+            "ID": "ISRAEL"
           }
         },
         {
@@ -34724,7 +34754,8 @@
           ],
           "type": "MultiPolygon",
           "properties": {
-            "NAME": "Italy"
+            "NAME": "Italy",
+            "ID": "ITALY"
           }
         },
         {
@@ -34741,7 +34772,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Jordan"
+            "NAME": "Jordan",
+            "ID": "JORDAN"
           }
         },
         {
@@ -34757,7 +34789,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Kazakhstan"
+            "NAME": "Kazakhstan",
+            "ID": "KAZAKHSTAN"
           }
         },
         {
@@ -34771,7 +34804,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Kyrgyzstan"
+            "NAME": "Kyrgyzstan",
+            "ID": "KYRGYZSTAN"
           }
         },
         {
@@ -34785,7 +34819,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Kosovo"
+            "NAME": "Kosovo",
+            "ID": "KOSOVO"
           }
         },
         {
@@ -34798,7 +34833,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Kuwait"
+            "NAME": "Kuwait",
+            "ID": "KUWAIT"
           }
         },
         {
@@ -34811,7 +34847,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Lebanon"
+            "NAME": "Lebanon",
+            "ID": "LEBANON"
           }
         },
         {
@@ -34826,7 +34863,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Lithuania"
+            "NAME": "Lithuania",
+            "ID": "LITHUANIA"
           }
         },
         {
@@ -34839,7 +34877,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Luxembourg"
+            "NAME": "Luxembourg",
+            "ID": "LUXEMBOURG"
           }
         },
         {
@@ -34854,7 +34893,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Latvia"
+            "NAME": "Latvia",
+            "ID": "LATVIA"
           }
         },
         {
@@ -34877,7 +34917,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "North Africa"
+            "NAME": "North Africa",
+            "ID": "NORTH_AFRICA"
           }
         },
         {
@@ -34889,7 +34930,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Moldova"
+            "NAME": "Moldova",
+            "ID": "MOLDOVA"
           }
         },
         {
@@ -34904,7 +34946,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Macedonia"
+            "NAME": "Macedonia",
+            "ID": "MACEDONIA"
           }
         },
         {
@@ -34920,7 +34963,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Montenegro"
+            "NAME": "Montenegro",
+            "ID": "MONTENEGRO"
           }
         },
         {
@@ -34933,7 +34977,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Netherlands"
+            "NAME": "Netherlands",
+            "ID": "NETHERLANDS"
           }
         },
         {
@@ -34964,29 +35009,8 @@
           ],
           "type": "MultiPolygon",
           "properties": {
-            "NAME": "Norway"
-          }
-        },
-        {
-          "arcs": [
-            [
-              [
-                -20,
-                477
-              ]
-            ],
-            [
-              [
-                -22,
-                478,
-                479,
-                480
-              ]
-            ]
-          ],
-          "type": "MultiPolygon",
-          "properties": {
-            "NAME": "Oman"
+            "NAME": "Norway",
+            "ID": "NORWAY"
           }
         },
         {
@@ -35004,7 +35028,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Poland"
+            "NAME": "Poland",
+            "ID": "POLAND"
           }
         },
         {
@@ -35016,7 +35041,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Portugal"
+            "NAME": "Portugal",
+            "ID": "PORTUGAL"
           }
         },
         {
@@ -35028,7 +35054,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Palestine"
+            "NAME": "Palestine",
+            "ID": "PALESTINE"
           }
         },
         {
@@ -35040,7 +35067,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Qatar"
+            "NAME": "Qatar",
+            "ID": "QATAR"
           }
         },
         {
@@ -35057,7 +35085,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Romania"
+            "NAME": "Romania",
+            "ID": "ROMANIA"
           }
         },
         {
@@ -35154,7 +35183,8 @@
           ],
           "type": "MultiPolygon",
           "properties": {
-            "NAME": "Russia"
+            "NAME": "Russia",
+            "ID": "RUSSIA"
           }
         },
         {
@@ -35174,7 +35204,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Saudi Arabia"
+            "NAME": "Saudi Arabia",
+            "ID": "SAUDI_ARABIA"
           }
         },
         {
@@ -35192,7 +35223,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Serbia"
+            "NAME": "Serbia",
+            "ID": "SERBIA"
           }
         },
         {
@@ -35207,7 +35239,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Slovakia"
+            "NAME": "Slovakia",
+            "ID": "SLOVAKIA"
           }
         },
         {
@@ -35222,7 +35255,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Slovenia"
+            "NAME": "Slovenia",
+            "ID": "SLOVENIA"
           }
         },
         {
@@ -35235,7 +35269,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Sweden"
+            "NAME": "Sweden",
+            "ID": "SWEDEN"
           }
         },
         {
@@ -35249,7 +35284,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Tajikistan"
+            "NAME": "Tajikistan",
+            "ID": "TAJIKISTAN"
           }
         },
         {
@@ -35264,7 +35300,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Turkmenistan"
+            "NAME": "Turkmenistan",
+            "ID": "TURKMENISTAN"
           }
         },
         {
@@ -35277,7 +35314,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Tunisia"
+            "NAME": "Tunis",
+            "ID": "TUNIS"
           }
         },
         {
@@ -35302,7 +35340,8 @@
           ],
           "type": "MultiPolygon",
           "properties": {
-            "NAME": "Turkey"
+            "NAME": "Turkey",
+            "ID": "TURKEY"
           }
         },
         {
@@ -35323,7 +35362,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Ukraine"
+            "NAME": "Ukraine",
+            "ID": "UKRAINE"
           }
         },
         {
@@ -35338,7 +35378,8 @@
           ],
           "type": "Polygon",
           "properties": {
-            "NAME": "Uzbekistan"
+            "NAME": "Uzbekistan",
+            "ID": "UZBEKISTAN"
           }
         }
       ]
