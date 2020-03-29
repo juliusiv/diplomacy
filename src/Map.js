@@ -28,7 +28,7 @@ const COLORS = {
   FRANCE: "steelblue",
   ITALY: "green",
   AUSTRIA: "pink",
-  RUSSIA: "purple",
+  RUSSIA: "mediumorchid",
   TURKEY: "cyan",
   OCEANS: "lightcyan",
   UNOCCUPIED: "beige",

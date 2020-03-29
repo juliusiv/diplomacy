@@ -59,10 +59,10 @@ export const ITALY = {
 
 export const AUSTRIA = {
   GALICIA: "GALICIA",
-  BOHEMIA: "BOHEMIA",
+  BOHEMIA: "BOHEMIA",  // DONE
   VIENNA: "VIENNA",
   BUDAPEST: "BUDAPEST",
-  TRIESTE: "TRIESTE",
+  TRIESTE: "TRIESTE",  // DONE
   TYROLIA: "TYROLIA"
 }
 
@@ -99,6 +99,7 @@ export const NEUTRAL = {
 export const UNOCCUPIED = {
   BELGIUM: "BELGIUM",  // DONE
   HOLLAND: "HOLLAND",
+  DENMARK: "DENMARK",  // DONE
   NORWAY: "NORWAY",  // DONE
   SWEDEN: "SWEDEN",  // DONE
   PORTUGAL: "PORTUGAL",  // DONE
