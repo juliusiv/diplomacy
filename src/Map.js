@@ -48,7 +48,7 @@ const getProvinceColor = provinceId => {
   if (UNOCCUPIED.hasOwnProperty(provinceId)) return COLORS.UNOCCUPIED
   if (NEUTRAL.hasOwnProperty(provinceId)) return COLORS.NEUTRAL
 
-  return "white"
+  return "ffffffff"
 }
 
 const MapChart = ({ setTooltipContent, boardState }) => {
