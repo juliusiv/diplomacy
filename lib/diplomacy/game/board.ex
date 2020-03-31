@@ -5,7 +5,7 @@ defmodule Diplomacy.Game.Board do
   alias Diplomacy.Game.Province
   alias Diplomacy.Game.Borders
 
-  @spec graph() :: list(Borders.border())
+  @spec graph() :: %{required(Province.t()) => Borders.border()}
   def graph do
     Province.provinces()
     |> Map.new(&Borders.borders/1)

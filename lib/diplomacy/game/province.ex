@@ -1,12 +1,12 @@
 defmodule Diplomacy.Game.Province do
-  @type t :: ocean() | land()
+  @type t :: sea() | land()
 
   @spec provinces :: list(t())
   def provinces do
-    oceans() ++ lands()
+    seas() ++ lands()
   end
 
-  @type ocean ::
+  @type sea ::
           :adriatic_sea
           | :aegean_sea
           | :baltic_sea
@@ -27,8 +27,8 @@ defmodule Diplomacy.Game.Province do
           | :tyrrhenian_sea
           | :western_mediterranean
 
-  @spec oceans :: list(ocean())
-  def oceans do
+  @spec seas :: list(sea())
+  def seas do
     ~w(
       adriatic_sea
       aegean_sea

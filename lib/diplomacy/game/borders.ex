@@ -1,7 +1,7 @@
 defmodule Diplomacy.Game.Borders do
   alias Diplomacy.Game.Province
 
-  @type border :: %{sea: list(Province.ocean()), land: list(Province.land())}
+  @type border :: %{sea: list(Province.sea()), land: list(Province.land())}
 
   @doc """
   Check whether or not 2 provinces border each other.
@@ -26,9 +26,7 @@ defmodule Diplomacy.Game.Borders do
       # hit the exception block below.
       p1_borders?
     else
-      IO.inspect(province1)
-      IO.inspect(province2)
-      raise "invalid border"
+      raise "invalid border: #{province1} <-> #{province2}"
     end
   end
 
@@ -262,6 +260,8 @@ defmodule Diplomacy.Game.Borders do
         london
         norway
         yorkshire
+        belgium
+        holland
       )a
     }
   end
@@ -338,7 +338,6 @@ defmodule Diplomacy.Game.Borders do
         tyrolia
         vienna
         munich
-        berlin
       )a
     }
   end
@@ -396,6 +395,7 @@ defmodule Diplomacy.Game.Borders do
         vienna
         piedmont
         venice
+        trieste
       )a
     }
   end
@@ -494,7 +494,7 @@ defmodule Diplomacy.Game.Borders do
         edinburgh
         liverpool
         wales
-        yorkshire
+        london
       )a
     }
   end
@@ -541,6 +541,7 @@ defmodule Diplomacy.Game.Borders do
         paris
         marseilles
         spain
+        burgundy
       )a
     }
   end
@@ -561,14 +562,12 @@ defmodule Diplomacy.Game.Borders do
 
   def borders(:paris) do
     %{
-      sea: ~w(
-        gulf_of_lyon
-      )a,
+      sea: ~w()a,
       land: ~w(
         brest
         burgundy
         picardy
-        piedmont
+        gascony
       )a
     }
   end
@@ -671,6 +670,7 @@ defmodule Diplomacy.Game.Borders do
         munich
         bohemia
         warsaw
+        galicia
       )a
     }
   end
@@ -831,16 +831,14 @@ defmodule Diplomacy.Game.Borders do
         finland
         livonia
         moscow
+        norway
       )a
     }
   end
 
   def borders(:ukraine) do
     %{
-      sea: ~w(
-        gulf_of_bothnia
-        barents_sea
-      )a,
+      sea: ~w()a,
       land: ~w(
         warsaw
         sevastopol
@@ -993,6 +991,7 @@ defmodule Diplomacy.Game.Borders do
       )a,
       land: ~w(
         kiel
+        sweden
       )a
     }
   end

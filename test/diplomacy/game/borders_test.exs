@@ -6,14 +6,13 @@ defmodule Diplomacy.Game.BordersTest do
 
   describe "borders" do
     test "validates" do
-      for province <- Province.oceans() do
+      for province <- Province.provinces() do
         %{
           sea: bordering_seas,
           land: bordering_lands
         } = Borders.borders(province)
 
         for bordering_province <- bordering_seas ++ bordering_lands,
-        # for bordering_province <- bordering_seas,
             do:
               assert(
                 Borders.borders?(province, bordering_province),
