@@ -12,8 +12,8 @@ defmodule Diplomacy.Game.BordersTest do
           land: bordering_lands
         } = Borders.borders(province)
 
-        # for bordering_province <- bordering_seas ++ bordering_lands,
-        for bordering_province <- bordering_seas,
+        for bordering_province <- bordering_seas ++ bordering_lands,
+        # for bordering_province <- bordering_seas,
             do:
               assert(
                 Borders.borders?(province, bordering_province),
