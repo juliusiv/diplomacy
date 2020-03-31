@@ -8,6 +8,9 @@ defmodule Diplomacy.Game.Order do
   @doc """
   A sigil for describing orders.
 
+  Note: It's difficult to type a sigil because it takes in strings but its output must be
+  province atoms.
+
   ## Examples
 
       iex> ~O(english_channel -> brest)
@@ -35,7 +38,6 @@ defmodule Diplomacy.Game.Order do
         to: :brest
       }
   """
-  @spec sigil_O(string(), list()) :: move() | convoy() | hold() | support()
   def sigil_O(string, _) do
     pieces = String.split(string)
 
@@ -52,19 +54,18 @@ defmodule Diplomacy.Game.Order do
           convoyee: String.to_atom(convoyee),
           to: String.to_atom(to)
         }
-      
+
       [holder] ->
         %{
           hold: String.to_atom(holder)
         }
-      
+
       [supporter, "^", supportee, "->", to] ->
         %{
           supporter: String.to_atom(supporter),
           supportee: String.to_atom(supportee),
           to: String.to_atom(to)
         }
-
     end
   end
 end

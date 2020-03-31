@@ -10,25 +10,25 @@ defmodule Diplomacy.Game.OrderTest do
 
     test "works for supports" do
       assert ~O(english_channel ^ picardy -> brest) == %{
-        supporter: :english_channel,
-        supportee: :picardy,
-        to: :brest
-      }
+               supporter: :english_channel,
+               supportee: :picardy,
+               to: :brest
+             }
     end
 
     test "works for moves" do
       assert ~O(english_channel -> brest) == %{
-        from: :english_channel,
-        to: :brest
-      }
+               from: :english_channel,
+               to: :brest
+             }
     end
 
     test "works for convoys" do
       assert ~O(english_channel : london -> brest) == %{
-        convoyer: :english_channel,
-        convoyee: :london,
-        to: :brest
-      }
+               convoyer: :english_channel,
+               convoyee: :london,
+               to: :brest
+             }
     end
   end
 end
