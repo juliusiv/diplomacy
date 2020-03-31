@@ -1,6 +1,7 @@
 defmodule Diplomacy.Game.Province do
   @type t :: ocean() | land()
 
+  @spec provinces :: list(t())
   def provinces do
     oceans() ++ lands()
   end
@@ -221,10 +222,48 @@ defmodule Diplomacy.Game.Province do
 
   @type land ::
           english() | french() | german() | italian() | russian() | turkish() | unoccupied()
-  
+
   @spec lands :: list(land())
   def lands do
     austrian() ++
       english() ++ french() ++ german() ++ italian() ++ russian() ++ turkish() ++ unoccupied()
+  end
+
+  @spec depots :: list(t())
+  def depots do
+    ~w(
+      edinburgh
+      liverpool
+      london
+      portugal
+      spain
+      tunis
+      marseilles
+      paris
+      brest
+      belgium
+      holland
+      kiel
+      munich
+      berlin
+      norway
+      denmark
+      sweden
+      st_petersburg
+      moscow
+      warsaw
+      sevastapol
+      ankara
+      smyrna
+      greece
+      naples
+      rome
+      venice
+      vienna
+      budapest
+      trieste
+      serbia
+      bulgaria
+    )a
   end
 end
