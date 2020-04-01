@@ -7,9 +7,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    container:
-      image: elixir:1.9.1
-
     services:
       postgres:
         image: postgres:11.5
