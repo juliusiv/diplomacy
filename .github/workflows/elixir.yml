@@ -60,7 +60,7 @@ jobs:
       env:
         cache-name: cache-typings
       with:
-        path: priv/plts/dialyzer.plt
+        path: priv/plts
         key: build-${{ env.cache-name }}-${{ hashFiles('mix.lock') }}
 
     - name: Install dependencies
