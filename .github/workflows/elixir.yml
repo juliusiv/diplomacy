@@ -55,6 +55,14 @@ jobs:
         otp-version: 22.x
         elixir-version: 1.9.x
 
+    - name: Cache Dialyzer typings
+      uses: actions/cache@v1
+      env:
+        cache-name: cache-typings
+      with:
+        path: priv/plts/dialyzer.plt
+        key: build-${{ env.cache-name }}-${{ hashFiles('mix.lock') }}
+
     - name: Install dependencies
       run: mix deps.get
 
