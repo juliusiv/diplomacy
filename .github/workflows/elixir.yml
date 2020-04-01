@@ -24,6 +24,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - uses: actions/setup-elixir@v1.1.0
+        with:
+          otp-version: 22.x
+          elixir-version: 1.9.x
 
     - name: Install Dependencies
       run: |
@@ -36,12 +40,12 @@ jobs:
 
     - name: Run Tests
       # We need to run with POSTGRES_HOST because these commands run in a container
-      run: |
-        POSTGRES_HOST=postgres mix ecto.create
-        POSTGRES_HOST=postgres mix test
       env:
         POSTGRES_HOST: postgres
         POSTGRES_PORT: ${{ job.services.postgres.ports['5432'] }}
+      run: |
+        mix ecto.create
+        mix test
 
   # Use dializer to typecheck.
   typecheck:
@@ -49,7 +53,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-
     - uses: actions/setup-elixir@v1.1.0
       with:
         otp-version: 22.x
