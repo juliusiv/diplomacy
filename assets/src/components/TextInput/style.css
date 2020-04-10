@@ -1,0 +1,8 @@
+.textInput {
+    border-radius: 2px;
+    border-style: solid;
+    border: 1px solid;
+    padding: 10px;
+    font-weight: 300;
+    border-color: var(--dip-grey);
+}

@@ -51,7 +51,7 @@ const getProvinceColor = provinceId => {
   return "ffffffff"
 }
 
-const MapChart = ({ setTooltipContent, boardState }) => {
+const MapChart = ({ setTooltipContent, boardState, sizeRatio = 1.0 }) => {
   const topo = topojson.topology([geo]);
 
   return (
@@ -63,8 +63,8 @@ const MapChart = ({ setTooltipContent, boardState }) => {
           rotate: [-17.0, -53.5, 0],
           scale: 900
         }}
-        width={700}
-        height={600}
+        width={700 * sizeRatio}
+        height={600 * sizeRatio}
         style={{
           backgroundColor: COLORS.OCEANS
         }}

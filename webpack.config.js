@@ -12,7 +12,7 @@ module.exports = (env, options) => ({
     ]
   },
   entry: {
-    app: './assets/src/index.js'
+    app: './assets/src/App.js'
   },
   output: {
     filename: 'app.js',
@@ -29,12 +29,29 @@ module.exports = (env, options) => ({
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: "css-loader",
+            options: {
+              modules: {
+                localIdentName: '[path][name]__[local]--[hash:base64:5]'
+              }
+            }
+          }
+        ]
       }
     ]
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: 'src/App.css' }),
-    new CopyWebpackPlugin([{ from: 'assets/static/', to: '../' }])
-  ]
+    // This filename is referencing the priv/static App.css, the one in src.
+    new MiniCssExtractPlugin({ filename: 'App.css' }),
+    new CopyWebpackPlugin([{ from: 'assets/static/', to: './' }])
+  ],
+  resolve: {
+    alias: {
+      "<diplomacy>": path.resolve(__dirname, "assets/src/"),
+      "<style>": path.resolve(__dirname, "assets/src/utils/style.js")
+    }
+  }
 });

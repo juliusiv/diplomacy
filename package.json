@@ -7,12 +7,16 @@
   },
   "dependencies": {
     "@vx/pattern": "0.0.195",
+    "axios": "^0.19.2",
     "phoenix": "file:deps/phoenix",
     "phoenix_html": "file:deps/phoenix_html",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-google-button": "^0.7.1",
     "react-router-dom": "^5.1.2",
+    "react-session-hook": "^2.0.1",
     "react-simple-maps": "^2.0.0",
+    "react-spring": "^8.0.27",
     "react-tooltip": "^4.1.2",
     "topojson-server": "^3.0.1"
   },

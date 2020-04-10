@@ -1,0 +1,7 @@
+.content {
+  width: 75%;
+}
+
+.navLink:hover {
+  font-weight: bold;
+}

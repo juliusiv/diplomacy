@@ -13,10 +13,19 @@ defmodule DiplomacyWeb.Router do
     plug :accepts, ["json"]
   end
 
+  scope "/api", ChoirWeb do
+    pipe_through(:api)
+
+    post("/log_in", PageController, :log_in)
+    post("/log_out", PageController, :log_out)
+    post("/sign_up", PageController, :sign_up)
+  end
+
   scope "/", DiplomacyWeb do
     pipe_through :browser
 
     get "/", PageController, :index
+    get("/*anything", PageController, :index)
   end
 
   # Other scopes may use custom stacks.
