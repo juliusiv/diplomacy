@@ -108,7 +108,7 @@
       },
       "properties": {
         "name": "Albania",
-        "id": "ALBANIA"
+        "id": "Albania"
       }
     },
     {
@@ -506,7 +506,7 @@
       },
       "properties": {
         "name": "Switzerland",
-        "id": "SWITZERLAND"
+        "id": "Switzerland"
       }
     },
     {
@@ -660,7 +660,7 @@
       },
       "properties": {
         "name": "Bohemia",
-        "id": "BOHEMIA"
+        "id": "Bohemia"
       }
     },
     {
@@ -1212,7 +1212,7 @@
       },
       "properties": {
         "name": "Denmark",
-        "id": "DENMARK"
+        "id": "Denmark"
       }
     },
     {
@@ -1468,7 +1468,7 @@
       },
       "properties": {
         "name": "Finland",
-        "id": "FINLAND"
+        "id": "Finland"
       }
     },
     {
@@ -1512,7 +1512,7 @@
       },
       "properties": {
         "name": "Corse",
-        "id": "CORSE"
+        "id": "Corse"
       }
     },
     {
@@ -1582,7 +1582,7 @@
       },
       "properties": {
         "name": "Brest",
-        "id": "BREST"
+        "id": "Brest"
       }
     },
     {
@@ -1640,7 +1640,7 @@
       },
       "properties": {
         "name": "Gascony",
-        "id": "GASCONY"
+        "id": "Gascony"
       }
     },
     {
@@ -1738,7 +1738,7 @@
       },
       "properties": {
         "name": "Burgundy",
-        "id": "BURGUNDY"
+        "id": "Burgundy"
       }
     },
     {
@@ -1836,7 +1836,7 @@
       },
       "properties": {
         "name": "Marseilles",
-        "id": "MARSEILLES"
+        "id": "Marseilles"
       }
     },
     {
@@ -1898,7 +1898,7 @@
       },
       "properties": {
         "name": "Paris",
-        "id": "PARIS"
+        "id": "Paris"
       }
     },
     {
@@ -1972,7 +1972,7 @@
       },
       "properties": {
         "name": "Picardy",
-        "id": "PICARDY"
+        "id": "Picardy"
       }
     },
     {
@@ -2046,7 +2046,7 @@
       },
       "properties": {
         "name": "Belgium",
-        "id": "BELGIUM"
+        "id": "Belgium"
       }
     },
     {
@@ -2264,7 +2264,7 @@
       },
       "properties": {
         "name": "Spain",
-        "id": "SPAIN"
+        "id": "Spain"
       }
     },
     {
@@ -2340,7 +2340,7 @@
       },
       "properties": {
         "name": "Edinburgh",
-        "id": "EDINBURGH"
+        "id": "Edinburgh"
       }
     },
     {
@@ -2401,7 +2401,7 @@
       },
       "properties": {
         "name": "Yorkshire",
-        "id": "YORKSHIRE"
+        "id": "Yorkshire"
       }
     },
     {
@@ -2457,7 +2457,7 @@
       },
       "properties": {
         "name": "London",
-        "id": "LONDON"
+        "id": "London"
       }
     },
     {
@@ -2557,7 +2557,7 @@
       },
       "properties": {
         "name": "Wales",
-        "id": "WALES"
+        "id": "Wales"
       }
     },
     {
@@ -2629,7 +2629,7 @@
       },
       "properties": {
         "name": "Liverpool",
-        "id": "LIVERPOOL"
+        "id": "Liverpool"
       }
     },
     {
@@ -2705,7 +2705,7 @@
       },
       "properties": {
         "name": "Clyde",
-        "id": "CLYDE"
+        "id": "Clyde"
       }
     },
     {
@@ -2953,7 +2953,7 @@
       },
       "properties": {
         "name": "Crete",
-        "id": "CRETE"
+        "id": "Crete"
       }
     },
     {
@@ -3161,7 +3161,7 @@
       },
       "properties": {
         "name": "Ireland",
-        "id": "IRELAND"
+        "id": "Ireland"
       }
     },
     {
@@ -3497,7 +3497,7 @@
       },
       "properties": {
         "name": "Sardinia",
-        "id": "SARDINIA"
+        "id": "Sardinia"
       }
     },
     {
@@ -3557,7 +3557,7 @@
       },
       "properties": {
         "name": "Sicily",
-        "id": "SICILY"
+        "id": "Siciliy"
       }
     },
     {
@@ -3651,7 +3651,7 @@
       },
       "properties": {
         "name": "Iceland",
-        "id": "ICELAND"
+        "id": "Iceland"
       }
     },
     {
@@ -3921,7 +3921,7 @@
       },
       "properties": {
         "name": "Livonia",
-        "id": "LIVONIA"
+        "id": "Livonia"
       }
     },
     {
@@ -4563,7 +4563,7 @@
       },
       "properties": {
         "name": "Norway",
-        "id": "NORWAY"
+        "id": "Norway"
       }
     },
     {
@@ -4903,7 +4903,7 @@
       },
       "properties": {
         "name": "Portugal",
-        "id": "PORTUGAL"
+        "id": "Portugal"
       }
     },
     {
@@ -6663,7 +6663,7 @@
       },
       "properties": {
         "name": "Sweden",
-        "id": "SWEDEN"
+        "id": "Sweden"
       }
     },
     {
@@ -7789,7 +7789,7 @@
       },
       "properties": {
         "name": "Cyprus",
-        "id": "CYPRUS"
+        "id": "Cyprus"
       }
     },
     {
@@ -10871,7 +10871,7 @@
       },
       "properties": {
         "name": "North Africa",
-        "id": "NORTH_AFRICA"
+        "id": "NorthAfrica"
       }
     },
     {
@@ -11017,7 +11017,7 @@
       },
       "properties": {
         "name": "Tunis",
-        "id": "TUNIS"
+        "id": "Tunis"
       }
     },
     {
@@ -11227,7 +11227,7 @@
       },
       "properties": {
         "name": "Trieste",
-        "id": "TRIESTE"
+        "id": "Trieste"
       }
     }
   ]

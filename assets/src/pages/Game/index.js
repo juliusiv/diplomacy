@@ -7,7 +7,7 @@ import BoardStatsTab from "./BoardStatsTab";
 import HistoryTab from "./HistoryTab";
 import OrdersTab from "./OrdersTab"
 import TabbedView, { Tab } from "./TabbedView"
-import Map, { ENGLAND, FRANCE, OCEANS } from "<diplomacy>/components/Map"
+import Map, { England, France, Oceans } from "<diplomacy>/components/Map"
 
 const GAME_FIXTURE = {
   name: "The Corona War",
@@ -45,10 +45,10 @@ const GAME_FIXTURE = {
 }
 
 const ORDERS_FIXTURE = [
-  { province: ENGLAND.CLYDE, hold: true },
-  { province: ENGLAND.WALES, to: FRANCE.BREST },
-  { province: ENGLAND.YORKSHIRE, support: ENGLAND.EDINBURGH, to: ENGLAND.CLYDE },
-  { province: OCEANS.ENGLISH_CHANNEL, convoy: ENGLAND.WALES, to: FRANCE.BREST },
+  { province: England.Clyde, hold: true },
+  { province: England.Wales, to: France.Brest },
+  { province: England.Yorkshire, support: England.Edinburgh, to: England.Clyde },
+  { province: Oceans.EnglishChannel, convoy: England.Wales, to: France.Brest },
 ]
 
 const Game = ({...props}) => {

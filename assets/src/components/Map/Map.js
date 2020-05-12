@@ -10,42 +10,42 @@ import * as topojson from "topojson-server"
 // import topo from "./topo.json"
 import geo from "./geo.json"
 import {
-  ENGLAND,
-  GERMANY,
-  FRANCE,
-  ITALY,
-  AUSTRIA,
-  RUSSIA,
-  TURKEY,
-  OCEANS,
-  UNOCCUPIED,
-  NEUTRAL
-} from "./provinces"
+  England,
+  Germany,
+  France,
+  Italy,
+  Austria,
+  Russia,
+  Turkey,
+  Oceans,
+  Unoccupied,
+  Neutral
+} from "./Provinces"
 
-const COLORS = {
-  ENGLAND: "orange",
-  GERMANY: "yellow",
-  FRANCE: "steelblue",
-  ITALY: "green",
-  AUSTRIA: "pink",
-  RUSSIA: "mediumorchid",
-  TURKEY: "cyan",
-  OCEANS: "lightcyan",
-  UNOCCUPIED: "beige",
-  NEUTRAL: "url('#neutral-lines')"
+const Colors = {
+  England: "orange",
+  Germany: "yellow",
+  France: "steelblue",
+  Italy: "green",
+  Austria: "pink",
+  Russia: "mediumorchid",
+  Turkey: "cyan",
+  Oceans: "lightcyan",
+  Unoccupied: "beige",
+  Neutral: "url('#neutral-lines')"
 }
 
 const getProvinceColor = provinceId => {
-  if (ENGLAND.hasOwnProperty(provinceId)) return COLORS.ENGLAND
-  if (GERMANY.hasOwnProperty(provinceId)) return COLORS.GERMANY
-  if (FRANCE.hasOwnProperty(provinceId)) return COLORS.FRANCE
-  if (ITALY.hasOwnProperty(provinceId)) return COLORS.ITALY
-  if (AUSTRIA.hasOwnProperty(provinceId)) return COLORS.AUSTRIA
-  if (RUSSIA.hasOwnProperty(provinceId)) return COLORS.RUSSIA
-  if (TURKEY.hasOwnProperty(provinceId)) return COLORS.TURKEY
-  if (OCEANS.hasOwnProperty(provinceId)) return COLORS.OCEANS
-  if (UNOCCUPIED.hasOwnProperty(provinceId)) return COLORS.UNOCCUPIED
-  if (NEUTRAL.hasOwnProperty(provinceId)) return COLORS.NEUTRAL
+  if (England.hasOwnProperty(provinceId)) return Colors.England
+  if (Germany.hasOwnProperty(provinceId)) return Colors.Germany
+  if (France.hasOwnProperty(provinceId)) return Colors.France
+  if (Italy.hasOwnProperty(provinceId)) return Colors.Italy
+  if (Austria.hasOwnProperty(provinceId)) return Colors.Austria
+  if (Russia.hasOwnProperty(provinceId)) return Colors.Russia
+  if (Turkey.hasOwnProperty(provinceId)) return Colors.Turkey
+  if (Oceans.hasOwnProperty(provinceId)) return Colors.Oceans
+  if (Unoccupied.hasOwnProperty(provinceId)) return Colors.Unoccupied
+  if (Neutral.hasOwnProperty(provinceId)) return Colors.Neutral
 
   return "ffffffff"
 }
@@ -66,7 +66,7 @@ const Map = ({ setTooltipContent, boardState, setBoardState, sizeRatio = 1.0 }) 
         width={700 * sizeRatio}
         height={600 * sizeRatio}
         style={{
-          backgroundColor: COLORS.OCEANS
+          backgroundColor: Colors.Oceans
         }}
       >
         <PatternLines

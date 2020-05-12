@@ -3,14 +3,14 @@ import Map from "./Map";
 
 export { Map as default };
 export {
-  ENGLAND,
-  GERMANY,
-  FRANCE,
-  ITALY,
-  AUSTRIA,
-  RUSSIA,
-  TURKEY,
-  OCEANS,
-  UNOCCUPIED,
-  NEUTRAL
-} from "./provinces";
+  England,
+  Germany,
+  France,
+  Italy,
+  Austria,
+  Russia,
+  Turkey,
+  Oceans,
+  Unoccupied,
+  Neutral
+} from "./Provinces";

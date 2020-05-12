@@ -1,116 +1,116 @@
-export const OCEANS = {
-  NORTH_ATLANTIC_OCEAN: "NORTH_ATLANTIC_OCEAN",
-  NORWEGIAN_SEA: "NORWEGIAN_SEA",
-  NORTH_SEA: "NORTH_SEA",
-  IRISH_SEA: "IRISH_SEA",
-  ENGLISH_CHANNEL: "ENGLISH_CHANNEL",
-  HELGOLAND_BIGHT: "HELGOLAND_BIGHT",
-  BARENTS_SEA: "BARENTS_SEA",
-  GULF_OF_BOTHNIA: "GULF_OF_BOTHNIA",
-  SKAGERRACK: "SKAGERRACK",
-  BALTIC_SEA: "BALTIC_SEA",
-  MID_ATLANTIC_OCEAN: "MID_ATLANTIC_OCEAN",
+export const Oceans = {
+  NorthAtlanticOcean: "NORTH_ATLANTIC_OCEAN",
+  NorwegianSea: "NORWEGIAN_SEA",
+  NorthSea: "NORTH_SEA",
+  IrishSea: "IRISH_SEA",
+  EnglishChannel: "ENGLISH_CHANNEL",
+  HelgolandBight: "HELGOLAND_BIGHT",
+  BarentsSea: "BARENTS_SEA",
+  GulfOfBothnia: "GULF_OF_BOTHNIA",
+  Skagerrak: "SKAGERRACK",
+  BalticSea: "BALTIC_SEA",
+  MidAtlanticOcean: "MID_ATLANTIC_OCEAN",
   GULF_OF_LYON: "GULF_OF_LYON",
-  WESTERN_MEDITERRANEAN: "WESTERN_MEDITERRANEAN",
-  TYRRHENIAN_SEA: "TYRRHENIAN_SEA",
-  ADRIATIC_SEA: "ADRIATIC_SEA",
-  IONIAN_SEA: "IONIAN_SEA",
-  BLACK_SEA: "BLACK_SEA",
-  AEGEAN_SEA: "AEGEAN_SEA",
-  EASTERN_MEDITERRANEAN: "EASTERN_MEDITERRANEAN"
+  WesternMediterranean: "WESTERN_MEDITERRANEAN",
+  TyrrhenianSea: "TYRRHENIAN_SEA",
+  AdriaticSea: "ADRIATIC_SEA",
+  IonianSea: "IONIAN_SEA",
+  BlackSea: "BLACK_SEA",
+  AegeanSea: "AEGEAN_SEA",
+  EasternMediterranean: "EASTERN_MEDITERRANEAN"
 }
 
-export const ENGLAND = {
-  CLYDE: "CLYDE",
-  EDINBURGH: "EDINBURGH",
-  YORKSHIRE: "YORKSHIRE",
-  LIVERPOOL: "LIVERPOOL",
-  WALES: "WALES",
-  LONDON: "LONDON"
+export const England = {
+  Clyde: "CLYDE",
+  Edinburgh: "EDINBURGH",
+  Yorkshire: "YORKSHIRE",
+  Liverpool: "LIVERPOOL",
+  Wales: "WALES",
+  London: "LONDON"
 }
 
-export const GERMANY = {
-  PRUSSIA: "PRUSSIA",
-  RUHR: "RUHR",
-  MUNICH: "MUNICH",
-  BERLIN: "BERLIN",
-  KIEL: "KIEL",
-  SILESIA: "SILESIA"
+export const Germany = {
+  Prussia: "PRUSSIA",
+  Ruhr: "RUHR",
+  Munich: "MUNICH",
+  Berlin: "BERLIN",
+  Kiel: "KIEL",
+  Silesia: "SILESIA"
 }
 
 // All done
-export const FRANCE = {
-  BREST: "BREST",
-  PICARDY: "PICARDY",
-  PARIS: "PARIS",
-  GASCONY: "GASCONY",
-  BURGUNDY: "BURGUNDY",
-  MARSEILLES: "MARSEILLES"
+export const France = {
+  Brest: "BREST",
+  Picardy: "PICARDY",
+  Paris: "PARIS",
+  Gascony: "GASCONY",
+  Burgundy: "BURGUNDY",
+  Marseilles: "MARSEILLES"
 }
 
-export const ITALY = {
-  PIDEMONT: "PIDEMONT",
-  ROME: "ROME",
-  TUSCANY: "TUSCANY",
-  VENICE: "VENICE",
-  APULIA: "APULIA",
-  NAPLES: "NAPLES"
+export const Italy = {
+  Piedmont: "PIEDMONT",
+  Rome: "ROME",
+  Tuscany: "TUSCANY",
+  Venice: "VENICE",
+  Apulia: "APULIA",
+  Naples: "NAPLES"
 }
 
-export const AUSTRIA = {
-  GALICIA: "GALICIA",
-  BOHEMIA: "BOHEMIA",  // DONE
+export const Austria = {
+  Galicia: "GALICIA",
+  Bohemia: "BOHEMIA",  // DONE
   VIENNA: "VIENNA",
-  BUDAPEST: "BUDAPEST",
-  TRIESTE: "TRIESTE",  // DONE
-  TYROLIA: "TYROLIA"
+  Budapest: "BUDAPEST",
+  Trieste: "TRIESTE",  // DONE
+  Tyrolia: "TYROLIA"
 }
 
-export const RUSSIA = {
-  FINLAND: "FINLAND",
-  ST_PETERSBURG: "ST_PETERSBURG",
-  LIVONIA: "LIVONIA",
-  WARSAW: "WARSAW",
-  UKRAINE: "UKRAINE",
-  SEVASTAPOL: "SEVASTAPOL",
-  MOSCOW: "MOSCOW"
+export const Russia = {
+  Finland: "FINLAND",
+  StPetersburg: "ST_PETERSBURG",
+  Livonia: "LIVONIA",
+  Warsaw: "WARSAW",
+  Ukraine: "UKRAINE",
+  Sevastapol: "SEVASTAPOL",
+  Moscow: "MOSCOW"
 }
 
-export const TURKEY = {
-  CONSTANTINOPLE: "CONSTANTINOPLE",
-  SMYRNA: "SMYRNA",
-  ARMENIA: "ARMENIA",
-  SYRIA: "SYRIA",
-  ANKARA: "ANKARA"
+export const Turkey = {
+  Constantinople: "CONSTANTINOPLE",
+  Smyrna: "SMYRNA",
+  Armenia: "ARMENIA",
+  Syria: "SYRIA",
+  Ankara: "ANKARA"
 }
 
 // All done
-export const NEUTRAL = {
-  IRELAND: "IRELAND",
-  ICELAND: "ICELAND",
-  SWITZERLAND: "SWITZERLAND",
-  CYPRUS: "CYPRUS",
-  CORSE: "CORSE",
-  SICILY: "SICILY",
-  SARDINIA: "SARDINIA",
-  CRETE: "CRETE"
+export const Neutral = {
+  Ireland: "IRELAND",
+  Iceland: "ICELAND",
+  Switzerland: "SWITZERLAND",
+  Cyprus: "CYPRUS",
+  Corse: "CORSE",
+  Siciliy: "SICILY",
+  Sardinia: "SARDINIA",
+  Crete: "CRETE"
 }
 
-export const UNOCCUPIED = {
-  BELGIUM: "BELGIUM",  // DONE
-  HOLLAND: "HOLLAND",
-  DENMARK: "DENMARK",  // DONE
-  NORWAY: "NORWAY",  // DONE
-  SWEDEN: "SWEDEN",  // DONE
-  PORTUGAL: "PORTUGAL",  // DONE
-  SPAIN: "SPAIN",  // DONE
-  GREECE: "GREECE",
-  NORTH_AFRICA: "NORTH_AFRICA",  // DONE
-  TUNIS: "TUNIS",  // DONE
-  ALBANIA: "ALBANIA",  // DONE
-  SERBIA: "SERBIA",
-  BULGARIA: "BULGARIA",
-  RUMANIA: "RUMANIA"
+export const Unoccupied = {
+  Belgium: "BELGIUM",  // DONE
+  Holland: "HOLLAND",
+  Denmark: "DENMARK",  // DONE
+  Norway: "NORWAY",  // DONE
+  Sweden: "SWEDEN",  // DONE
+  Portugal: "PORTUGAL",  // DONE
+  Spain: "SPAIN",  // DONE
+  Greece: "GREECE",
+  NorthAfrica: "NORTH_AFRICA",  // DONE
+  Tunis: "TUNIS",  // DONE
+  Albania: "ALBANIA",  // DONE
+  Serbia: "SERBIA",
+  Bulgaria: "BULGARIA",
+  Rumania: "RUMANIA"
 }
 
 export const label = province => province;
