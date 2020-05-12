@@ -4,13 +4,8 @@ import { Link, Route, Router, Switch, useHistory, useRouteMatch } from "react-ro
 
 import css from "<style>";
 
-const Tab = ({ title, children, path, ...props }) => {
-  return (
-    <Route path={path} strict={false}>
-      {children}
-    </Route>
-  )
-}
+// The Tab component is really just a wrapper to ensure some props.
+const Tab = ({ title, children, path, ...props }) => children
 
 const Title = ({ text, path, history }) => {
   const match = useRouteMatch(path)
@@ -36,7 +31,7 @@ const Title = ({ text, path, history }) => {
 const TabbedView = ({ children, ...props }) => {
   const history = useHistory();
   const { url: matchPath } = useRouteMatch()
-  // const tabs = children.map(({ props: { component: C, path } }) => <C key={path} />)
+  const tabPath = path => `${matchPath}${path === "/" ? "" : path}`
 
   return (
     <div>
@@ -44,18 +39,23 @@ const TabbedView = ({ children, ...props }) => {
         {children.map(({ props }, i) => {
           const { title, path } = props
           const isLast = i === (children.length - 1)
-          const tabPath = `${matchPath}${path === "/" ? "" : path}`
 
           return (
             <div key={path}>
-              <Title text={title} path={tabPath} history={history} />
+              <Title text={title} path={tabPath(path)} history={history} />
               {!isLast && <span className={css`fontTiny ml2 mr2`}>★</span>}
             </div>
           )
         })}
       </div>
       <Router history={history}>
-        <Switch>{children}</Switch>
+        <Switch>
+          {children.map(child => (
+            <Route path={tabPath(child.props.path)} exact>
+              {child}
+            </Route>
+          ))}
+        </Switch>
       </Router>
     </div>
   )
