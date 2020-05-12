@@ -42,9 +42,9 @@ defmodule Diplomacy.Game.Order do
     pieces = String.split(string)
 
     case pieces do
-      [from, "->", to] ->
+      [mover, "->", to] ->
         %{
-          from: String.to_atom(from),
+          mover: String.to_atom(mover),
           to: String.to_atom(to)
         }
 

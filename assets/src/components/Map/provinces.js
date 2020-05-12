@@ -112,3 +112,5 @@ export const UNOCCUPIED = {
   BULGARIA: "BULGARIA",
   RUMANIA: "RUMANIA"
 }
+
+export const label = province => province;

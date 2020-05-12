@@ -8,9 +8,9 @@ import styles from "./style.css"
 
 const NavLink = ({ children, isActive, isLast, ...props }) => {
   const classes = classNames(
-    css`ml2 mr2 mb block cBlack copperplate underlineNone`,
+    css`ml2 mr2 block cBlack copperplate underlineNone`,
     styles.navLink,
-    { [css`underline`]: isActive }
+    { [css`bold`]: isActive }
   );
 
   return (

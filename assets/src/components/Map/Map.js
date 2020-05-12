@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo, useState } from "react";
 import {
   ComposableMap,
   Geographies,
@@ -33,7 +33,6 @@ const COLORS = {
   OCEANS: "lightcyan",
   UNOCCUPIED: "beige",
   NEUTRAL: "url('#neutral-lines')"
-  // NEUTRAL: "dimgrey"
 }
 
 const getProvinceColor = provinceId => {
@@ -51,8 +50,9 @@ const getProvinceColor = provinceId => {
   return "ffffffff"
 }
 
-const MapChart = ({ setTooltipContent, boardState, sizeRatio = 1.0 }) => {
+const Map = ({ setTooltipContent, boardState, setBoardState, sizeRatio = 1.0 }) => {
   const topo = topojson.topology([geo]);
+  const [board, setBoard] = useState(boardState)
 
   return (
     <>
@@ -116,4 +116,5 @@ const MapChart = ({ setTooltipContent, boardState, sizeRatio = 1.0 }) => {
   );
 };
 
-export default memo(MapChart);
+export default Map;
+// export default memo(Map);

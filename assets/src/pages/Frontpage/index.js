@@ -6,7 +6,7 @@ import useSession from "react-session-hook";
 import css, { i } from "<style>";
 import PageContainer, { Pages } from "<diplomacy>/containers/PageContainer";
 import A from "<diplomacy>/components/A";
-import Map from '<diplomacy>/Map';
+import Map from '<diplomacy>/components/Map';
 
 const Frontpage = ({...props}) => {
   const history = useHistory();
