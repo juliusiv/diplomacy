@@ -51,7 +51,7 @@ const TabbedView = ({ children, ...props }) => {
       <Router history={history}>
         <Switch>
           {children.map(child => (
-            <Route path={tabPath(child.props.path)} exact>
+            <Route key={child.props.path} path={tabPath(child.props.path)} exact>
               {child}
             </Route>
           ))}

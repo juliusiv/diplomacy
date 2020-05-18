@@ -7,7 +7,9 @@ import BoardStatsTab from "./BoardStatsTab";
 import HistoryTab from "./HistoryTab";
 import OrdersTab from "./OrdersTab"
 import TabbedView, { Tab } from "./TabbedView"
-import Map, { England, France, Oceans } from "<diplomacy>/components/Map"
+import Map, { Oceans } from "<diplomacy>/components/Map"
+import England from "<diplomacy>/components/Map/England"
+import France from "<diplomacy>/components/Map/France"
 
 const GAME_FIXTURE = {
   name: "The Corona War",

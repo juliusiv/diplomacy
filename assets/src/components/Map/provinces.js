@@ -20,15 +20,6 @@ export const Oceans = {
   EasternMediterranean: "EASTERN_MEDITERRANEAN"
 }
 
-export const England = {
-  Clyde: "CLYDE",
-  Edinburgh: "EDINBURGH",
-  Yorkshire: "YORKSHIRE",
-  Liverpool: "LIVERPOOL",
-  Wales: "WALES",
-  London: "LONDON"
-}
-
 export const Germany = {
   Prussia: "PRUSSIA",
   Ruhr: "RUHR",
@@ -36,16 +27,6 @@ export const Germany = {
   Berlin: "BERLIN",
   Kiel: "KIEL",
   Silesia: "SILESIA"
-}
-
-// All done
-export const France = {
-  Brest: "BREST",
-  Picardy: "PICARDY",
-  Paris: "PARIS",
-  Gascony: "GASCONY",
-  Burgundy: "BURGUNDY",
-  Marseilles: "MARSEILLES"
 }
 
 export const Italy = {
@@ -59,17 +40,15 @@ export const Italy = {
 
 export const Austria = {
   Galicia: "GALICIA",
-  Bohemia: "BOHEMIA",  // DONE
   VIENNA: "VIENNA",
   Budapest: "BUDAPEST",
-  Trieste: "TRIESTE",  // DONE
   Tyrolia: "TYROLIA"
 }
 
 export const Russia = {
-  Finland: "FINLAND",
+  // Finland: "FINLAND",
   StPetersburg: "ST_PETERSBURG",
-  Livonia: "LIVONIA",
+  // Livonia: "LIVONIA",
   Warsaw: "WARSAW",
   Ukraine: "UKRAINE",
   Sevastapol: "SEVASTAPOL",
@@ -84,30 +63,9 @@ export const Turkey = {
   Ankara: "ANKARA"
 }
 
-// All done
-export const Neutral = {
-  Ireland: "IRELAND",
-  Iceland: "ICELAND",
-  Switzerland: "SWITZERLAND",
-  Cyprus: "CYPRUS",
-  Corse: "CORSE",
-  Siciliy: "SICILY",
-  Sardinia: "SARDINIA",
-  Crete: "CRETE"
-}
-
 export const Unoccupied = {
-  Belgium: "BELGIUM",  // DONE
   Holland: "HOLLAND",
-  Denmark: "DENMARK",  // DONE
-  Norway: "NORWAY",  // DONE
-  Sweden: "SWEDEN",  // DONE
-  Portugal: "PORTUGAL",  // DONE
-  Spain: "SPAIN",  // DONE
   Greece: "GREECE",
-  NorthAfrica: "NORTH_AFRICA",  // DONE
-  Tunis: "TUNIS",  // DONE
-  Albania: "ALBANIA",  // DONE
   Serbia: "SERBIA",
   Bulgaria: "BULGARIA",
   Rumania: "RUMANIA"
