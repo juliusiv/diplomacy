@@ -12,12 +12,13 @@ import Geo from "./Geo.js"
 import Austria, * as AustrianProvinces from "./Austria"
 import England, * as EnglishProvinces from "./England"
 import France, * as FrenchProvinces from "./France"
+import Italy, * as ItalianProvinces from "./Italy"
 import Neutral, * as NeutralProvinces from "./Neutral"
 import Russia, * as RussianProvinces from "./Russia"
 import Unoccupied, * as UnoccupiedProvinces from "./Unoccupied"
 import {
   Germany,
-  Italy,
+  // Italy,
   Turkey,
   Oceans,
 } from "./Provinces"
@@ -50,13 +51,16 @@ const getProvinceColor = provinceId => {
   return "ffffffff"
 }
 
+// Do this outside of the component to avoid rerenders.
+Geo.features = Geo.features.concat(Object.values(AustrianProvinces))
+Geo.features = Geo.features.concat(Object.values(EnglishProvinces))
+Geo.features = Geo.features.concat(Object.values(FrenchProvinces))
+Geo.features = Geo.features.concat(Object.values(ItalianProvinces))
+Geo.features = Geo.features.concat(Object.values(NeutralProvinces))
+Geo.features = Geo.features.concat(Object.values(RussianProvinces))
+Geo.features = Geo.features.concat(Object.values(UnoccupiedProvinces))
+
 const Map = ({ setTooltipContent, boardState, setBoardState, sizeRatio = 1.0 }) => {
-  Geo.features = Geo.features.concat(Object.values(AustrianProvinces))
-  Geo.features = Geo.features.concat(Object.values(EnglishProvinces))
-  Geo.features = Geo.features.concat(Object.values(FrenchProvinces))
-  Geo.features = Geo.features.concat(Object.values(NeutralProvinces))
-  Geo.features = Geo.features.concat(Object.values(RussianProvinces))
-  Geo.features = Geo.features.concat(Object.values(UnoccupiedProvinces))
   const topo = topojson.topology([Geo]);
   const [board, setBoard] = useState(boardState)
 

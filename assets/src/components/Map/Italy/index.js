@@ -1,25 +1,25 @@
-// import Clyde from "./Clyde.js";
-// import Edinburgh from "./Edinburgh.js";
-// import Liverpool from "./Liverpool.js";
-// import London from "./London.js";
-// import Wales from "./Wales.js";
-// import Yorkshire from "./Yorkshire.js";
+import Naples from "./Naples.js";
+import Rome from "./Rome.js";
+import Tuscany from "./Tuscany.js";
+import Apulia from "./Apulia.js";
+import Venice from "./Venice.js";
+import Piedmont from "./Piedmont.js";
 
-// const England = {
-//   [Clyde.properties.id]: Clyde.properties.id,
-//   [Edinburgh.properties.id]: Edinburgh.properties.id,
-//   [Liverpool.properties.id]: Liverpool.properties.id,
-//   [London.properties.id]: London.properties.id,
-//   [Wales.properties.id]: Wales.properties.id,
-//   [Yorkshire.properties.id]: Yorkshire.properties.id
-// }
+const Italy = {
+  [Naples.properties.id]: Naples.properties.id,
+  [Rome.properties.id]: Rome.properties.id,
+  [Tuscany.properties.id]: Tuscany.properties.id,
+  [Apulia.properties.id]: Apulia.properties.id,
+  [Venice.properties.id]: Venice.properties.id,
+  [Piedmont.properties.id]: Piedmont.properties.id
+}
 
-// export default England
-// export {
-//   Clyde,
-//   Edinburgh,
-//   Liverpool,
-//   London,
-//   Wales,
-//   Yorkshire
-// }
+export default Italy
+export {
+  Naples,
+  Rome,
+  Tuscany,
+  Apulia,
+  Venice,
+  Piedmont
+}
