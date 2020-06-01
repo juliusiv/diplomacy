@@ -1,25 +1,25 @@
-// import Clyde from "./Clyde.js";
-// import Edinburgh from "./Edinburgh.js";
-// import Liverpool from "./Liverpool.js";
-// import London from "./London.js";
-// import Wales from "./Wales.js";
-// import Yorkshire from "./Yorkshire.js";
+import Ruhr from "./Ruhr.js";
+import Kiel from "./Kiel.js";
+import Munich from "./Munich.js";
+import Berlin from "./Berlin.js";
+import Prussia from "./Prussia.js";
+import Silesia from "./Silesia.js";
 
-// const England = {
-//   [Clyde.properties.id]: Clyde.properties.id,
-//   [Edinburgh.properties.id]: Edinburgh.properties.id,
-//   [Liverpool.properties.id]: Liverpool.properties.id,
-//   [London.properties.id]: London.properties.id,
-//   [Wales.properties.id]: Wales.properties.id,
-//   [Yorkshire.properties.id]: Yorkshire.properties.id
-// }
+const Germany = {
+  [Ruhr.properties.id]: Ruhr.properties.id,
+  [Kiel.properties.id]: Kiel.properties.id,
+  [Munich.properties.id]: Munich.properties.id,
+  [Berlin.properties.id]: Berlin.properties.id,
+  [Prussia.properties.id]: Prussia.properties.id,
+  [Silesia.properties.id]: Silesia.properties.id
+}
 
-// export default England
-// export {
-//   Clyde,
-//   Edinburgh,
-//   Liverpool,
-//   London,
-//   Wales,
-//   Yorkshire
-// }
+export default Germany
+export {
+  Ruhr,
+  Kiel,
+  Munich,
+  Berlin,
+  Prussia,
+  Silesia
+}
