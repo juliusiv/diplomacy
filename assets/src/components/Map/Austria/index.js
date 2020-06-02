@@ -1,17 +1,17 @@
 import Bohemia from "./Bohemia.js";
 import Trieste from "./Trieste.js";
 import Tyrolia from "./Tyrolia.js";
-// import London from "./London.js";
-// import Wales from "./Wales.js";
-// import Yorkshire from "./Yorkshire.js";
+import Vienna from "./Vienna.js";
+import Budapest from "./Budapest.js";
+import Galicia from "./Galicia.js";
 
 const Austria = {
   [Bohemia.properties.id]: Bohemia.properties.id,
   [Trieste.properties.id]: Trieste.properties.id,
   [Tyrolia.properties.id]: Tyrolia.properties.id,
-//   [London.properties.id]: London.properties.id,
-//   [Wales.properties.id]: Wales.properties.id,
-//   [Yorkshire.properties.id]: Yorkshire.properties.id
+  [Vienna.properties.id]: Vienna.properties.id,
+  [Budapest.properties.id]: Budapest.properties.id,
+  [Galicia.properties.id]: Galicia.properties.id
 }
 
 export default Austria
@@ -19,7 +19,7 @@ export {
   Bohemia,
   Trieste,
   Tyrolia,
-//   London,
-//   Wales,
-//   Yorkshire
+  Vienna,
+  Budapest,
+  Galicia
 }
