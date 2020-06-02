@@ -18,7 +18,7 @@ defmodule Diplomacy.Game.OrderTest do
 
     test "works for moves" do
       assert ~O(english_channel -> brest) == %{
-               from: :english_channel,
+               mover: :english_channel,
                to: :brest
              }
     end

@@ -15,7 +15,7 @@ defmodule Diplomacy.Game.Order do
 
       iex> ~O(english_channel -> brest)
       %{
-        from: :english_channel,
+        mover: :english_channel,
         to: :brest
       }
 
