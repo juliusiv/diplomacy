@@ -16,11 +16,12 @@ import Germany, * as GermanProvinces from "./Germany"
 import Italy, * as ItalianProvinces from "./Italy"
 import Neutral, * as NeutralProvinces from "./Neutral"
 import Russia, * as RussianProvinces from "./Russia"
+import Turkey, * as TurkishProvinces from "./Turkey"
 import Unoccupied, * as UnoccupiedProvinces from "./Unoccupied"
 import {
   // Germany,
   // Italy,
-  Turkey,
+  // Turkey,
   Oceans,
 } from "./Provinces"
 
@@ -60,6 +61,7 @@ Geo.features = Geo.features.concat(Object.values(GermanProvinces))
 Geo.features = Geo.features.concat(Object.values(ItalianProvinces))
 Geo.features = Geo.features.concat(Object.values(NeutralProvinces))
 Geo.features = Geo.features.concat(Object.values(RussianProvinces))
+Geo.features = Geo.features.concat(Object.values(TurkishProvinces))
 Geo.features = Geo.features.concat(Object.values(UnoccupiedProvinces))
 
 const Map = ({ setTooltipContent, boardState, setBoardState, sizeRatio = 1.0 }) => {

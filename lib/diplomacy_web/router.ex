@@ -13,7 +13,7 @@ defmodule DiplomacyWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", ChoirWeb do
+  scope "/api", DiplomacyWeb do
     pipe_through(:api)
 
     post("/log_in", PageController, :log_in)
