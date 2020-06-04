@@ -1,14 +1,14 @@
 import Constantinople from "./Constantinople.js";
-// import Edinburgh from "./Edinburgh.js";
-// import Liverpool from "./Liverpool.js";
+import Ankara from "./Ankara.js";
+import Smyrna from "./Smyrna.js";
 // import London from "./London.js";
 // import Wales from "./Wales.js";
 // import Yorkshire from "./Yorkshire.js";
 
 const Turkey = {
   [Constantinople.properties.id]: Constantinople.properties.id,
-//   [Edinburgh.properties.id]: Edinburgh.properties.id,
-//   [Liverpool.properties.id]: Liverpool.properties.id,
+  [Ankara.properties.id]: Ankara.properties.id,
+  [Smyrna.properties.id]: Smyrna.properties.id,
 //   [London.properties.id]: London.properties.id,
 //   [Wales.properties.id]: Wales.properties.id,
 //   [Yorkshire.properties.id]: Yorkshire.properties.id
@@ -17,8 +17,8 @@ const Turkey = {
 export default Turkey
 export {
   Constantinople,
-//   Edinburgh,
-//   Liverpool,
+  Ankara,
+  Smyrna,
 //   London,
 //   Wales,
 //   Yorkshire

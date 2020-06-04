@@ -7,6 +7,7 @@ import Holland from "./Holland.js";
 import NorthAfrica from "./NorthAfrica.js";
 import Norway from "./Norway.js";
 import Portugal from "./Portugal.js";
+import Rumania from "./Rumania.js";
 import Serbia from "./Serbia.js";
 import Spain from "./Spain.js";
 import Sweden from "./Sweden.js";
@@ -22,6 +23,7 @@ const Unoccupied = {
   [NorthAfrica.properties.id]: NorthAfrica.properties.id,
   [Norway.properties.id]: Norway.properties.id,
   [Portugal.properties.id]: Portugal.properties.id,
+  [Rumania.properties.id]: Rumania.properties.id,
   [Serbia.properties.id]: Serbia.properties.id,
   [Spain.properties.id]: Spain.properties.id,
   [Sweden.properties.id]: Sweden.properties.id,
@@ -39,6 +41,7 @@ export {
   NorthAfrica,
   Norway,
   Portugal,
+  Rumania,
   Serbia,
   Spain,
   Sweden,
