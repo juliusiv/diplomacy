@@ -7,8 +7,6 @@ import {
 import { PatternLines } from "@vx/pattern";
 import * as topojson from "topojson-server"
 
-// import topo from "./topo.json"
-import Geo from "./Geo.js"
 import Austria, * as AustrianProvinces from "./Austria"
 import England, * as EnglishProvinces from "./England"
 import France, * as FrenchProvinces from "./France"
@@ -18,12 +16,7 @@ import Neutral, * as NeutralProvinces from "./Neutral"
 import Russia, * as RussianProvinces from "./Russia"
 import Turkey, * as TurkishProvinces from "./Turkey"
 import Unoccupied, * as UnoccupiedProvinces from "./Unoccupied"
-import {
-  // Germany,
-  // Italy,
-  // Turkey,
-  Oceans,
-} from "./Provinces"
+import { Oceans } from "./Provinces"
 
 const Colors = {
   England: "orange",
@@ -53,16 +46,21 @@ const getProvinceColor = provinceId => {
   return "ffffffff"
 }
 
-// Do this outside of the component to avoid rerenders.
-Geo.features = Geo.features.concat(Object.values(AustrianProvinces))
-Geo.features = Geo.features.concat(Object.values(EnglishProvinces))
-Geo.features = Geo.features.concat(Object.values(FrenchProvinces))
-Geo.features = Geo.features.concat(Object.values(GermanProvinces))
-Geo.features = Geo.features.concat(Object.values(ItalianProvinces))
-Geo.features = Geo.features.concat(Object.values(NeutralProvinces))
-Geo.features = Geo.features.concat(Object.values(RussianProvinces))
-Geo.features = Geo.features.concat(Object.values(TurkishProvinces))
-Geo.features = Geo.features.concat(Object.values(UnoccupiedProvinces))
+// Build this outside of the component to avoid rerenders.
+const Geo = {
+  type: "FeatureCollection",
+  features: [
+    ...Object.values(AustrianProvinces),
+    ...Object.values(EnglishProvinces),
+    ...Object.values(FrenchProvinces),
+    ...Object.values(GermanProvinces),
+    ...Object.values(ItalianProvinces),
+    ...Object.values(NeutralProvinces),
+    ...Object.values(RussianProvinces),
+    ...Object.values(TurkishProvinces),
+    ...Object.values(UnoccupiedProvinces)
+  ]
+}
 
 const Map = ({ setTooltipContent, boardState, setBoardState, sizeRatio = 1.0 }) => {
   const topo = topojson.topology([Geo]);
