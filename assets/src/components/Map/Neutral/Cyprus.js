@@ -1,8 +1,8 @@
 const Cyprus = {
-  "type": "Feature",
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
+  type: "Feature",
+  geometry: {
+    type: "Polygon",
+    coordinates: [
       [
         [
           33.97361657078346,
@@ -59,9 +59,10 @@ const Cyprus = {
       ]
     ]
   },
-  "properties": {
-    "name": "Cyprus",
-    "id": "Cyprus"
+  properties: {
+    name: "Cyprus",
+    id: "Cyprus",
+    neutral: true
   }
 }
 

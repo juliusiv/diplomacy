@@ -1,8 +1,8 @@
 const Crete = {
-  "type": "Feature",
-  "geometry": {
-    "type": "MultiPolygon",
-    "coordinates": [
+  type: "Feature",
+  geometry: {
+    type: "MultiPolygon",
+    coordinates: [
       [
         [
           [
@@ -53,9 +53,10 @@ const Crete = {
       ]
     ]
   },
-  "properties": {
-    "name": "Crete",
-    "id": "Crete"
+  properties: {
+    name: "Crete",
+    id: "Crete",
+    neutral: true
   }
 }
 

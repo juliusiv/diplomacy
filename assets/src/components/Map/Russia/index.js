@@ -1,25 +1,28 @@
 import Finland from "./Finland.js";
 import Livonia from "./Livonia.js";
 import Warsaw from "./Warsaw.js";
-// import London from "./London.js";
-// import Wales from "./Wales.js";
-// import Yorkshire from "./Yorkshire.js";
+import StPetersburg from "./StPetersburg.js";
+import Ukraine from "./Ukraine.js";
+import Sevastopol from "./Sevastopol.js";
+import Moscow from "./Moscow.js";
 
-const England = {
+const Russia = {
   [Finland.properties.id]: Finland.properties.id,
   [Livonia.properties.id]: Livonia.properties.id,
   [Warsaw.properties.id]: Warsaw.properties.id,
-//   [London.properties.id]: London.properties.id,
-//   [Wales.properties.id]: Wales.properties.id,
-//   [Yorkshire.properties.id]: Yorkshire.properties.id
+  [StPetersburg.properties.id]: StPetersburg.properties.id,
+  [Ukraine.properties.id]: Ukraine.properties.id,
+  [Sevastopol.properties.id]: Sevastopol.properties.id,
+  [Moscow.properties.id]: Moscow.properties.id
 }
 
-export default England
+export default Russia
 export {
   Finland,
   Livonia,
   Warsaw,
-//   London,
-//   Wales,
-//   Yorkshire
+  StPetersburg,
+  Ukraine,
+  Sevastopol,
+  Moscow
 }

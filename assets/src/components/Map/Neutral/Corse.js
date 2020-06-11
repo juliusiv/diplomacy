@@ -1,8 +1,8 @@
 const Corse = {
-  "type": "Feature",
-  "geometry": {
-    "type": "MultiPolygon",
-    "coordinates": [
+  type: "Feature",
+  geometry: {
+    type: "MultiPolygon",
+    coordinates: [
       [
         [
           [
@@ -37,9 +37,10 @@ const Corse = {
       ]
     ]
   },
-  "properties": {
-    "name": "Corse",
-    "id": "Corse"
+  properties: {
+    name: "Corse",
+    id: "Corse",
+    neutral: true
   }
 }
 

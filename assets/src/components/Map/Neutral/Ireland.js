@@ -1,8 +1,8 @@
 const Ireland = {
-  "type": "Feature",
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
+  type: "Feature",
+  geometry: {
+    type: "Polygon",
+    coordinates: [
       [
         [
           -6.197884894220991,
@@ -59,9 +59,10 @@ const Ireland = {
       ]
     ]
   },
-  "properties": {
-    "name": "Ireland",
-    "id": "Ireland"
+  properties: {
+    name: "Ireland",
+    id: "Ireland",
+    neutral: true
   }
 }
 

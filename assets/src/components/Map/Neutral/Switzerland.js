@@ -1,8 +1,8 @@
 const Switzerland = {
-  "type": "Feature",
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
+  type: "Feature",
+  geometry: {
+    type: "Polygon",
+    coordinates: [
       [
         [
           9.59422610844635,
@@ -103,9 +103,10 @@ const Switzerland = {
       ]
     ]
   },
-  "properties": {
-    "name": "Switzerland",
-    "id": "Switzerland"
+  properties: {
+    name: "Switzerland",
+    id: "Switzerland",
+    neutral: true
   }
 }
 

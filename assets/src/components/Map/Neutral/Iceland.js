@@ -1,8 +1,8 @@
 const Iceland = {
-  "type": "Feature",
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
+  type: "Feature",
+  geometry: {
+    type: "Polygon",
+    coordinates: [
       [
         [
           -14.508695441129236,
@@ -87,9 +87,10 @@ const Iceland = {
       ]
     ]
   },
-  "properties": {
-    "name": "Iceland",
-    "id": "Iceland"
+  properties: {
+    name: "Iceland",
+    id: "Iceland",
+    neutral: true
   }
 }
 

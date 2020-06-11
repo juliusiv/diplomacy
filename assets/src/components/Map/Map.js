@@ -95,26 +95,28 @@ const Map = ({ setTooltipContent, boardState, setBoardState, sizeRatio = 1.0 }) 
         <Geographies geography={topo}>
           {({ geographies }) =>
             geographies.map(geo => {
-              const { name, id } = geo.properties;
+              const { name, id, neutral } = geo.properties;
               const color = getProvinceColor(id)
+              const hoverStyle = neutral ? { fill: color } : {
+                fill: color,
+                outline: "none",
+                cursor: "pointer",
+                strokeWidth: 2
+              }
+
               return (
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
                   stroke="darkslategrey"
-                  onMouseEnter={() => setTooltipContent(name)}
+                  onMouseEnter={() => !neutral && setTooltipContent(name)}
                   onMouseLeave={() => setTooltipContent("")}
                   style={{
                     default: {
                       fill: color,
                       outline: "none"
                     },
-                    hover: {
-                      fill: color,
-                      outline: "none",
-                      cursor: "pointer",
-                      strokeWidth: 2
-                    },
+                    hover: hoverStyle,
                     pressed: {
                       fill: "#E42",
                       outline: "none"

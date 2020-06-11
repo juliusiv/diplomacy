@@ -1,8 +1,8 @@
 const Sicily = {
-  "type": "Feature",
-  "geometry": {
-    "type": "MultiPolygon",
-    "coordinates": [
+  type: "Feature",
+  geometry: {
+    type: "MultiPolygon",
+    coordinates: [
       [
         [
           [
@@ -53,9 +53,10 @@ const Sicily = {
       ]
     ]
   },
-  "properties": {
-    "name": "Sicily",
-    "id": "Siciliy"
+  properties: {
+    name: "Sicily",
+    id: "Siciliy",
+    neutral: true
   }
 }
 

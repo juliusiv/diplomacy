@@ -1,8 +1,8 @@
 const Sardinia = {
-  "type": "Feature",
-  "geometry": {
-    "type": "MultiPolygon",
-    "coordinates": [
+  type: "Feature",
+  geometry: {
+    type: "MultiPolygon",
+    coordinates: [
       [
         [
           [
@@ -49,9 +49,10 @@ const Sardinia = {
       ]
     ]
   },
-  "properties": {
-    "name": "Sardinia",
-    "id": "Sardinia"
+  properties: {
+    name: "Sardinia",
+    id: "Sardinia",
+    neutral: true
   }
 }
 
