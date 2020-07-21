@@ -13,10 +13,10 @@ import France, * as FrenchProvinces from "./France"
 import Germany, * as GermanProvinces from "./Germany"
 import Italy, * as ItalianProvinces from "./Italy"
 import Neutral, * as NeutralProvinces from "./Neutral"
+import Oceans from "./Oceans"
 import Russia, * as RussianProvinces from "./Russia"
 import Turkey, * as TurkishProvinces from "./Turkey"
 import Unoccupied, * as UnoccupiedProvinces from "./Unoccupied"
-import { Oceans } from "./Provinces"
 
 const Colors = {
   England: "orange",

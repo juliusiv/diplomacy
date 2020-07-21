@@ -23,3 +23,27 @@
 //   Wales,
 //   Yorkshire
 // }
+
+const Oceans = {
+  NorthAtlanticOcean: "NORTH_ATLANTIC_OCEAN",
+  NorwegianSea: "NORWEGIAN_SEA",
+  NorthSea: "NORTH_SEA",
+  IrishSea: "IRISH_SEA",
+  EnglishChannel: "ENGLISH_CHANNEL",
+  HelgolandBight: "HELGOLAND_BIGHT",
+  BarentsSea: "BARENTS_SEA",
+  GulfOfBothnia: "GULF_OF_BOTHNIA",
+  Skagerrak: "SKAGERRACK",
+  BalticSea: "BALTIC_SEA",
+  MidAtlanticOcean: "MID_ATLANTIC_OCEAN",
+  GULF_OF_LYON: "GULF_OF_LYON",
+  WesternMediterranean: "WESTERN_MEDITERRANEAN",
+  TyrrhenianSea: "TYRRHENIAN_SEA",
+  AdriaticSea: "ADRIATIC_SEA",
+  IonianSea: "IONIAN_SEA",
+  BlackSea: "BLACK_SEA",
+  AegeanSea: "AEGEAN_SEA",
+  EasternMediterranean: "EASTERN_MEDITERRANEAN"
+}
+
+export default Oceans

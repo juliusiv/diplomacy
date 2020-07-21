@@ -8,7 +8,7 @@ import HistoryTab from "./HistoryTab";
 import OrdersTab from "./OrdersTab"
 import TabbedView, { Tab } from "./TabbedView"
 import Map from "<diplomacy>/components/Map"
-import { Oceans } from "<diplomacy>/components/Map/Provinces"
+import Oceans from "<diplomacy>/components/Map/Oceans"
 import England from "<diplomacy>/components/Map/England"
 import France from "<diplomacy>/components/Map/France"
 
