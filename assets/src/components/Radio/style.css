@@ -1,4 +1,0 @@
-.radio:checked:before {
-    content: '';
-    background: black;
-}

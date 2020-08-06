@@ -1,17 +1,14 @@
 import React from "react";
-import classnames from "classnames"
 import Navigation from "./Navigation";
-import css from "<style>";
-import style from "./style.css"
 
-const PageContainer = ({ page, children, withNavigation, ...props }) => {
+const PageContainer = ({ page, children, withNavigation = true, ...props }) => {
   return (
-    <div className={css`heightAll flex column cBlack`} {...props}>
-      {
-        withNavigation && <Navigation active={page} />
-      }
-      <div className={css`pt4 flex justifyCenter widthAll`}>
-        <div className={style.content}>
+    <div className="h-full bg-gray-300 flex flex-col text-black overflow-auto w-full">
+      <div className="flex flex-col items-center h-full" {...props}>
+        {
+          withNavigation && <Navigation active={page} />
+        }
+        <div className="pt-4 w-9/12">
           {children}
         </div>
       </div>

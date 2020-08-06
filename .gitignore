@@ -37,3 +37,4 @@ npm-debug.log
 /priv/plts/*.plt.hash
 
 env
+yarn-error.log

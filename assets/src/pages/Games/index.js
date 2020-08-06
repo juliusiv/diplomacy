@@ -8,8 +8,6 @@ import Button, { ROLES } from "<diplomacy>/components/Button";
 import TextInput from "<diplomacy>/components/TextInput";
 import Radio from "<diplomacy>/components/Radio";
 import Table from "<diplomacy>/components/Table";
-import css from "<style>";
-import styles from "./styles.css"
 
 const GAMES_FIXTURE = [
   {
@@ -46,12 +44,12 @@ const Games = ({...props}) => {
   // setGames(GAMES_FIXTURE)
 
   return (
-    <PageContainer page={Pages.GAMES} withNavigation>
-      <div className={css`flex row alignBaseline`}>
-        <div className={css`pr4 borderRight widthAll`}>
-          <h2 className={css`copperplate mb2`}>Active Games</h2>
+    <PageContainer page={Pages.GAMES}>
+      <div className="flex-row items-baseline">
+        <div className="pr-4 border-r w-full">
+          <h2 className="font-copperplate mb-2">Active Games</h2>
           <Table
-            className={css`widthAll`}
+            className="w-full"
             headers={[
               {column: "name", label: "Name"},
               {column: "phase", label: "Phase"},
@@ -63,22 +61,22 @@ const Games = ({...props}) => {
           />
         </div>
 
-        <div className={css`pl4`}>
-          <div className={css`pb4`}>
-            <h2 className={css`copperplate mb2`}>Join</h2>
-            <TextInput label="Game ID" placeholder={"ABC123"} className={css`mr3 mb3`} />
+        <div className="pl-4">
+          <div className="pb-4">
+            <h2 className="font-copperplate mb-2">Join</h2>
+            <TextInput label="Game ID" placeholder={"ABC123"} className="mr-3 mb-3" />
             <Button role={ROLES.PRIMARY}>
               Join
             </Button>
           </div>
 
           <div>
-            <h2 className={css`copperplate mb2`}>Create</h2>
-            <form className={css`mb3`}>
-              <TextInput label="Name" placeholder={""} className={css`mb3`} />
-              <div className={css`pb3`}>
+            <h2 className="font-copperplate mb-2">Create</h2>
+            <form className="mb-3">
+              <TextInput label="Name" placeholder={""} className="mb-3" />
+              <div className="pb-3">
                 <span>Phase Duration</span>
-                <Radio options={["12 hours", "24 hours", "6 hours"]} name="phaseDuration" className={css`mt1`} />
+                <Radio options={["12 hours", "24 hours", "6 hours"]} name="phaseDuration" className="mt-1" />
               </div>
               <Button role={ROLES.PRIMARY} >
                 Create

@@ -1,20 +1,17 @@
 import React, { useState } from "react"
 import classNames from "classnames";
 
-import css from "<style>";
-import style from "./style.css"
-
 const TextInput = ({ label, placeholder, className, ...props }) => {
   const [value, setValue] = useState(undefined)
 
   return (
     <div>
-      <label className={css`block`}>{label}</label>
+      <label className="block">{label}</label>
       <input
         type="text"
         value={value}
         placeholder={placeholder}
-        className={classNames(style.textInput, css`fontNormal block`, className)}
+        className={classNames("border-solid rounded p-3 font-light border-gray-300", "block", className)}
         onChange={e => setValue(e.target.value)}
       />
     </div>

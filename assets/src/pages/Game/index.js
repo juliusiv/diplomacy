@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ReactTooltip from "react-tooltip";
 import PageContainer, { Pages } from "<diplomacy>/containers/PageContainer";
-import css from "<style>";
 
 import BoardStatsTab from "./BoardStatsTab";
 import HistoryTab from "./HistoryTab";
@@ -60,17 +59,17 @@ const Game = ({...props}) => {
   const orders = ORDERS_FIXTURE;
 
   return (
-    <PageContainer page={Pages.GAME} withNavigation>
-      <div className={css`flex row alignBaseline`}>
-        <div className={css`pr4`}>
-          <div className={css`fontLarge copperplate bold`}>{game.name}</div>
+    <PageContainer page={Pages.GAME}>
+      <div className="flex items-baseline">
+        <div className="w-1/2">
+          <div className="font-4xl font-copperplate bold">{game.name}</div>
           <span>Phase ends in {game.phaseEnd}.</span>
           <div style={{width: 700, border: "1px solid black"}}>
             <Map setTooltipContent={setContent} orders={orders} />
             <ReactTooltip>{content}</ReactTooltip>
           </div>
         </div>
-        <div>
+        <div className="w-1/2">
           <TabbedView>
             <Tab title="Orders" path="/">
               <OrdersTab orders={orders} />

@@ -2,15 +2,12 @@ import React from "react";
 import classNames from "classnames";
 
 import { Link } from "react-router-dom"
-import css from "<style>";
 import Pages from "./Pages";
-import styles from "./style.css"
 
 const NavLink = ({ children, isActive, isLast, ...props }) => {
   const classes = classNames(
-    css`ml2 mr2 block cBlack copperplate underlineNone`,
-    styles.navLink,
-    { [css`bold`]: isActive }
+    "ml-4 mr-4 inline-block text-black text-lg no-underline font-copperplate hover:font-bold",
+    { "font-bold": isActive }
   );
 
   return (
@@ -18,7 +15,6 @@ const NavLink = ({ children, isActive, isLast, ...props }) => {
       <Link {...props} className={classes}>
         {children}
       </Link>
-      {!isLast && <span className={css`fontTiny`}>★</span>}
     </>
   );
 };
@@ -41,27 +37,13 @@ const PAGE_LINKS = [
   },
 ];
 
-const FancyBottom = ({ children }) => {
-  return (
-    <div className={css`pb1 bcGrey borderBottom widthAll`}>
-      <div className={css`pb1 bcRed borderBottom widthAll`}>
-        <div className={css`bcOrange borderBottom widthAll`}>
-          {children}
-        </div>
-      </div>
-    </div>
-  )
-}
-
 const Navigation = ({ active, ...props }) => {
   return (
-    <nav className={css`cBlack widthAll`} {...props}>
-      <FancyBottom>
-        <div className={css`flex column justifyCenter alignCenter pb3`}>
-          <Link to={"/"} className={css`underlineNone cBlack`}>
-            <h1 className={css`copperplate fontHuge`}>Diplomacy</h1>
+    <nav className="text-black pb-3 w-full bg-white flex flex-col items-center border-b border-black shadow-sm" {...props}>
+        <div className="flex flex-row w-9/12 items-baseline">
+          <Link to={"/"} className="no-underline text-black mr-4">
+            <h1 className="text-5xl font-copperplate">Diplomacy</h1>
           </Link>
-          <div className={css`flex row alignBaseline`}>
           {
             PAGE_LINKS.map(({ to, page, title }, i) => (
               <NavLink
@@ -74,9 +56,7 @@ const Navigation = ({ active, ...props }) => {
               </NavLink>
             ))
           }
-          </div>
         </div>
-      </FancyBottom>
     </nav>
   );
 };

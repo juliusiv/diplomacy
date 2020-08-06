@@ -1,24 +1,19 @@
 import React from "react"
 import classNames from "classnames";
 
-import style from "./style.css"
-import css from "<style>"
-
 export const ROLES = {
   PRIMARY: "PRIMARY",
   SECONDARY: "SECONDARY"
 
 }
 const ROLE_COLORS = {
-  // PRIMARY: css`bgBlue`,
-  // PRIMARY: css`cBlack bgWhite`,
-  PRIMARY: css`cWhite bgBlue`,
-  SECONDARY: css`bgOrange`
+  PRIMARY: "text-white bg-blue-500",
+  SECONDARY: "bg-red-500"
 }
 
 const Button = ({ children, role, className, ...props }) => {
   return (
-    <div className={classNames(style.button, ROLE_COLORS[role], className)}>
+    <div className={classNames("cursor-pointer pt-1 pr-3 pb-1 pl-3 w-auto inline-block", ROLE_COLORS[role], className)}>
       {children}
     </div>
   )

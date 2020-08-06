@@ -1,9 +1,0 @@
-.table {
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-  border-spacing: 0;
-  color: var(--dip-black);
-}
-
-.row:hover {
-  cursor: pointer;
-}

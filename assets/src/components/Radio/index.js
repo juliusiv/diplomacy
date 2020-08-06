@@ -1,9 +1,6 @@
 import React, { useState } from "react"
 import classNames from "classnames";
 
-import css from "<style>";
-import style from "./style.css"
-
 const Radio = ({ options, name, className, ...props }) => {
   const [value, setValue] = useState(undefined)
 
@@ -14,11 +11,11 @@ const Radio = ({ options, name, className, ...props }) => {
           <input
             type="radio"
             value={value}
-            className={classNames(style.radio, css`fontNormal block floatLeft mr2`, className)}
+            className={classNames("bg-black text-base block float-left mr-2", className)}
             onChange={e => setValue(e.target.value)}
             name={name}
           />
-          <label className={css`block`}>{value}</label>
+          <label className="block">{value}</label>
         </div>
       ))}
     </div>

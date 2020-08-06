@@ -2,8 +2,6 @@ import React from "react";
 import classNames from "classnames";
 import { Link, Route, Router, Switch, useHistory, useRouteMatch } from "react-router-dom";
 
-import css from "<style>";
-
 // The Tab component is really just a wrapper to ensure some props.
 const Tab = ({ title, children, path, ...props }) => children
 
@@ -12,15 +10,15 @@ const Title = ({ text, path, history }) => {
   const isActive = match && match.isExact
 
   const className = classNames(
-    css`cursorPointer copperplate`,
+    "cursor-pointer font-copperplate",
     {
-      [css`fontMedium`]: !isActive,
-      [css`fontLarge bold`]: isActive
+      "font-md": !isActive,
+      "font-4xl bold": isActive
     }
   )
   const onClick = () => !isActive && history.push(path)
   return (
-    <Link to={path} className={css`underlineNone cBlack`}>
+    <Link to={path} className="no-underline text-black">
       <span key={text} className={className} onClick={onClick}>
         {text}
       </span>
@@ -35,7 +33,7 @@ const TabbedView = ({ children, ...props }) => {
 
   return (
     <div>
-      <div className={css`flex row alignBaseline`}>
+      <div className="flex-row items-baseline">
         {children.map(({ props }, i) => {
           const { title, path } = props
           const isLast = i === (children.length - 1)
@@ -43,7 +41,7 @@ const TabbedView = ({ children, ...props }) => {
           return (
             <div key={path}>
               <Title text={title} path={tabPath(path)} history={history} />
-              {!isLast && <span className={css`fontTiny ml2 mr2`}>★</span>}
+              {!isLast && <span className="font-xs ml-2 mr-2">★</span>}
             </div>
           )
         })}
