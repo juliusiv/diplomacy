@@ -95,12 +95,11 @@ const Map = ({ setTooltipContent, boardState, setBoardState, sizeRatio = 1.0 }) 
             geographies.map(geo => {
               const { name, id, neutral } = geo.properties;
               const color = getProvinceColor(id)
-              const hoverStyle = neutral ? { fill: color } : {
-                fill: color,
-                outline: "none",
+              const hoverStyle = neutral ? { } : {
                 cursor: "pointer",
                 strokeWidth: 2
               }
+              const pressedStyle = neutral ? { fill: "#0000000" } : { fill: "black" }
 
               return (
                 <Geography
@@ -114,11 +113,12 @@ const Map = ({ setTooltipContent, boardState, setBoardState, sizeRatio = 1.0 }) 
                       fill: color,
                       outline: "none"
                     },
-                    hover: hoverStyle,
-                    pressed: {
-                      fill: "#E42",
-                      outline: "none"
-                    }
+                    hover: {
+                      outline: "none",
+                      fill: color,
+                      ...hoverStyle
+                    },
+                    pressed: { outline: "none", ...pressedStyle }
                   }}
                 />
               )

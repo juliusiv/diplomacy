@@ -1,12 +1,12 @@
 const Pages = {
-  ABOUT: "About",
-  ACCOUNT: "Account",
-  GAME: "GAME",
-  GAMES: "GAMES",
-  FRONTPAGE: "FRONTPAGE",
-  LOGIN: "LOGIN",
-  SIGNUP: "SIGNUP",
-  NOT_FOUND: "NOT_FOUND"
+  About: "About",
+  Account: "Account",
+  Game: "Game",
+  Games: "Games",
+  Frontpage: "Frontpage",
+  NotFound: "NotFound",
+  Login: "Login",
+  Signup: "Signup",
 };
 
 export default Pages;

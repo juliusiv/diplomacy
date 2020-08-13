@@ -10,15 +10,15 @@ const Title = ({ text, path, history }) => {
   const isActive = match && match.isExact
 
   const className = classNames(
-    "cursor-pointer font-copperplate",
+    "cursor-pointer font-copperplate mr-8 hover:text-red-900",
     {
-      "font-md": !isActive,
-      "font-4xl bold": isActive
+      "text-xl": !isActive,
+      "text-xl bold border-b-4 border-red-300 text-red-900": isActive
     }
   )
   const onClick = () => !isActive && history.push(path)
   return (
-    <Link to={path} className="no-underline text-black">
+    <Link to={path} className="no-underline text-gray-900">
       <span key={text} className={className} onClick={onClick}>
         {text}
       </span>
@@ -32,16 +32,14 @@ const TabbedView = ({ children, ...props }) => {
   const tabPath = path => `${matchPath}${path === "/" ? "" : path}`
 
   return (
-    <div>
-      <div className="flex-row items-baseline">
+    <>
+      <div className="flex flex-row items-baseline border-b border-red-900 mb-4">
         {children.map(({ props }, i) => {
           const { title, path } = props
-          const isLast = i === (children.length - 1)
 
           return (
             <div key={path}>
               <Title text={title} path={tabPath(path)} history={history} />
-              {!isLast && <span className="font-xs ml-2 mr-2">★</span>}
             </div>
           )
         })}
@@ -55,7 +53,7 @@ const TabbedView = ({ children, ...props }) => {
           ))}
         </Switch>
       </Router>
-    </div>
+    </>
   )
 }
 

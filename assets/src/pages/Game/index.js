@@ -5,7 +5,7 @@ import PageContainer, { Pages } from "<diplomacy>/containers/PageContainer";
 import BoardStatsTab from "./BoardStatsTab";
 import HistoryTab from "./HistoryTab";
 import OrdersTab from "./OrdersTab"
-import TabbedView, { Tab } from "./TabbedView"
+import TabbedView, { Tab } from "<diplomacy>/components/TabbedView"
 import Map from "<diplomacy>/components/Map"
 import Oceans from "<diplomacy>/components/Map/Oceans"
 import England from "<diplomacy>/components/Map/England"
@@ -59,12 +59,12 @@ const Game = ({...props}) => {
   const orders = ORDERS_FIXTURE;
 
   return (
-    <PageContainer page={Pages.GAME}>
+    <PageContainer page={Pages.Game}>
       <div className="flex items-baseline">
         <div className="w-1/2">
-          <div className="font-4xl font-copperplate bold">{game.name}</div>
+          <div className="text-3xl font-copperplate bold truncate">{game.name}</div>
           <span>Phase ends in {game.phaseEnd}.</span>
-          <div style={{width: 700, border: "1px solid black"}}>
+          <div style={{width: 500, border: "1px solid black"}}>
             <Map setTooltipContent={setContent} orders={orders} />
             <ReactTooltip>{content}</ReactTooltip>
           </div>

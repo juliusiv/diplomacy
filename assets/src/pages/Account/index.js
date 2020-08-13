@@ -2,15 +2,15 @@ import React from "react";
 
 import PageContainer, { Pages } from "<diplomacy>/containers/PageContainer";
 
-const Frontpage = ({...props}) => {
+const Account = ({...props}) => {
 
   return (
-    <PageContainer page={Pages.About}>
+    <PageContainer page={Pages.Account}>
       <div>
-          About all the stuff!
+          Account
       </div>
     </PageContainer>
   )
 }
 
-export default Frontpage
+export default Account

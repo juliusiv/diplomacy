@@ -7,11 +7,11 @@ const Radio = ({ options, name, className, ...props }) => {
   return (
     <div className={className}>
       {options.map(value => (
-        <div>
+        <div key={value}>
           <input
             type="radio"
             value={value}
-            className={classNames("bg-black text-base block float-left mr-2", className)}
+            className={classNames("bg-gray-900 text-base block float-left mr-2", className)}
             onChange={e => setValue(e.target.value)}
             name={name}
           />

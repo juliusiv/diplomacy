@@ -4,11 +4,6 @@
 
 @tailwind utilities;
 
-/* Reset all margins and paddings */
-/* * {
-    margin: 0px;
-    padding: 0px;
-} */
 
 /* And make sure we're filling the page */
 html, body, main {
