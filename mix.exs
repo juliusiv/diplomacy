@@ -36,9 +36,10 @@ defmodule Diplomacy.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:bcrypt_elixir, "~> 2.0"},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
-      {:phoenix, "~> 1.4.16"},
-      {:phoenix_pubsub, "~> 1.1"},
+      {:phoenix, "~> 1.5.4"},
+      {:phoenix_pubsub, "~> 2.0"},
       {:phoenix_ecto, "~> 4.0"},
       {:ecto_sql, "~> 3.1"},
       {:postgrex, ">= 0.0.0"},
@@ -46,7 +47,11 @@ defmodule Diplomacy.MixProject do
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:phx_gen_auth, "~> 0.4.0", only: [:dev], runtime: false},
+      {:swoosh, "~> 1.0"},
+      {:gen_smtp, "~> 0.13"},
+      {:hackney, "~> 1.9"}
     ]
   end
 

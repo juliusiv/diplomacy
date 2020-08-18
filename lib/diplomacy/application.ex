@@ -11,9 +11,10 @@ defmodule Diplomacy.Application do
       # Start the Ecto repository
       Diplomacy.Repo,
       # Start the endpoint when the application starts
-      DiplomacyWeb.Endpoint
+      DiplomacyWeb.Endpoint,
       # Starts a worker by calling: Diplomacy.Worker.start_link(arg)
       # {Diplomacy.Worker, arg},
+      {Phoenix.PubSub, [name: Diplomacy.PubSub, adapter: Phoenix.PubSub.PG2]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
