@@ -168,8 +168,15 @@ defmodule Diplomacy.Accounts do
     {encoded_token, user_token} = UserToken.build_email_token(user, "change:#{current_email}")
 
     Repo.insert!(user_token)
-    email = UserEmails.update_email_instructions(current_email, user, update_email_url_fun.(encoded_token))
-    email |> Mailer.deliver
+
+    email =
+      UserEmails.update_email_instructions(
+        current_email,
+        user,
+        update_email_url_fun.(encoded_token)
+      )
+
+    email |> Mailer.deliver()
     {:ok, email}
   end
 
@@ -262,8 +269,15 @@ defmodule Diplomacy.Accounts do
     else
       {encoded_token, user_token} = UserToken.build_email_token(user, "confirm")
       Repo.insert!(user_token)
-      email = UserEmails.confirm_email_instructions(user.email, user, confirmation_url_fun.(encoded_token))
-      email |> Mailer.deliver
+
+      email =
+        UserEmails.confirm_email_instructions(
+          user.email,
+          user,
+          confirmation_url_fun.(encoded_token)
+        )
+
+      email |> Mailer.deliver()
       {:ok, email}
     end
   end
@@ -305,8 +319,15 @@ defmodule Diplomacy.Accounts do
       when is_function(reset_password_url_fun, 1) do
     {encoded_token, user_token} = UserToken.build_email_token(user, "reset_password")
     Repo.insert!(user_token)
-    email = UserEmails.reset_password_instructions(user.email, user, reset_password_url_fun.(encoded_token))
-    email |> Mailer.deliver
+
+    email =
+      UserEmails.reset_password_instructions(
+        user.email,
+        user,
+        reset_password_url_fun.(encoded_token)
+      )
+
+    email |> Mailer.deliver()
     {:ok, email}
   end
 

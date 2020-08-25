@@ -20,5 +20,4 @@ config :diplomacy, DiplomacyWeb.Endpoint,
 # Print only warnings and errors during test
 config :logger, level: :warn
 
-config :diplomacy, Diplomacy.Notifier.Mailer,
-  adapter: Swoosh.Adapters.Test
+config :diplomacy, Diplomacy.Notifier.Mailer, adapter: Swoosh.Adapters.Test
