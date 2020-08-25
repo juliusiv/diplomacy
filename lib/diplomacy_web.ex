@@ -60,6 +60,14 @@ defmodule DiplomacyWeb do
     end
   end
 
+  def registry do
+    quote do
+      use Substrate.Registry
+
+      registry prefix: "/api", alias: DiplomacyWeb
+    end
+  end
+
   @doc """
   When used, dispatch to the appropriate controller/view/etc.
   """

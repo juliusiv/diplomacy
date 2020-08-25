@@ -1,9 +1,11 @@
 defmodule DiplomacyWeb.UserRegisterController do
   use DiplomacyWeb, :controller
+  use DiplomacyWeb, :registry
 
   alias Diplomacy.Accounts
   alias DiplomacyWeb.UserAuth
 
+  @doc registry.handles(path: "/users/register")
   def register_user(conn, %{"user" => user_params}) do
     case Accounts.register_user(user_params) do
       {:ok, user} ->

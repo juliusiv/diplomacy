@@ -1,5 +1,6 @@
 defmodule DiplomacyWeb.Router do
   use DiplomacyWeb, :router
+  use DiplomacyWeb, :registry
 
   import DiplomacyWeb.UserAuth
 
@@ -16,10 +17,14 @@ defmodule DiplomacyWeb.Router do
     plug :accepts, ["json"]
   end
 
+  Registry.register do
+    UserRegisterController.entry(:register_user)
+  end
+
   scope "/api", DiplomacyWeb do
     pipe_through [:browser, :redirect_if_user_is_authenticated]
 
-    post "/users/register", UserRegisterController, :register_user
+    # post "/users/register", UserRegisterController, :register_user
     post "/users/log_in", UserLogInController, :log_in_user
     post "/users/reset_password", PasswordResetInitiateController, :initiate_password_reset
     put "/users/reset_password/:token", PasswordResetConfirmController, :confirm_password_reset
