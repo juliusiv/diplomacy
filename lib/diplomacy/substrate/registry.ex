@@ -1,12 +1,17 @@
 defmodule Substrate.Registry do
   defmacro __using__(opts) do
     {prefix, opts} = Keyword.pop(opts, :prefix, "")
-    {alias, opts} = Keyword.pop(opts, :alias, "")
 
     quote do
       use Substrate.Controller
 
-      # def handles
+      def handles(opts) do
+        path = Keyword.fetch!(opts, :path)
+        path = Path.join(unquote(prefix), path)
+        method = Keyword.fetch!(opts, :method)
+
+        [handles: %{path: path, method: method}]
+      end
     end
 
     # defmacro handles(opts) do

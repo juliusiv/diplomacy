@@ -1,16 +1,17 @@
 defmodule DiplomacyWeb.UserRegisterController do
   use DiplomacyWeb, :controller
-  # use DiplomacyWeb.Registry
-  use Substrate.Controller
+  use DiplomacyWeb.Registry
+  # use Substrate.Controller
 
   alias Diplomacy.Accounts
   alias DiplomacyWeb.UserAuth
 
-  # @doc handles(path: "/users/register")
-  @doc handles: %{
-    path: "/api/users/register",
-    method: :post
-  }
+  @doc DiplomacyWeb.Registry.handles(path: "/users/register", method: :post)
+  # @doc handles(path: "/users/register", method: :post)
+  # @doc handles: %{
+  #   path: "/api/users/register",
+  #   method: :post
+  # }
   def register_user(conn, %{"user" => user_params}) do
     case Accounts.register_user(user_params) do
       {:ok, user} ->
