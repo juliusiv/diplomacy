@@ -4,8 +4,9 @@
 
 @tailwind utilities;
 
-
 /* And make sure we're filling the page */
-html, body, main {
-    height: 100%;
+html,
+body,
+main {
+  height: 100%;
 }

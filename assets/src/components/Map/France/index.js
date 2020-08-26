@@ -11,15 +11,8 @@ const France = {
   [Picardy.properties.id]: Picardy.properties.id,
   [Burgundy.properties.id]: Burgundy.properties.id,
   [Gascony.properties.id]: Gascony.properties.id,
-  [Marseilles.properties.id]: Marseilles.properties.id
-}
+  [Marseilles.properties.id]: Marseilles.properties.id,
+};
 
-export default France
-export {
-  Paris,
-  Brest,
-  Picardy,
-  Burgundy,
-  Gascony,
-  Marseilles
-}
+export default France;
+export { Paris, Brest, Picardy, Burgundy, Gascony, Marseilles };

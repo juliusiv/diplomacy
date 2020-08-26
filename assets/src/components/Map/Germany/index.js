@@ -11,15 +11,8 @@ const Germany = {
   [Munich.properties.id]: Munich.properties.id,
   [Berlin.properties.id]: Berlin.properties.id,
   [Prussia.properties.id]: Prussia.properties.id,
-  [Silesia.properties.id]: Silesia.properties.id
-}
+  [Silesia.properties.id]: Silesia.properties.id,
+};
 
-export default Germany
-export {
-  Ruhr,
-  Kiel,
-  Munich,
-  Berlin,
-  Prussia,
-  Silesia
-}
+export default Germany;
+export { Ruhr, Kiel, Munich, Berlin, Prussia, Silesia };

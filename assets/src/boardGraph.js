@@ -1,1 +1,1 @@
-export const BOARD_GRAPH = {}
+export const BOARD_GRAPH = {};

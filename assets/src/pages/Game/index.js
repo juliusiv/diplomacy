@@ -4,12 +4,12 @@ import PageContainer, { Pages } from "<diplomacy>/containers/PageContainer";
 
 import BoardStatsTab from "./BoardStatsTab";
 import HistoryTab from "./HistoryTab";
-import OrdersTab from "./OrdersTab"
-import TabbedView, { Tab } from "<diplomacy>/components/TabbedView"
-import Map from "<diplomacy>/components/Map"
-import Oceans from "<diplomacy>/components/Map/Oceans"
-import England from "<diplomacy>/components/Map/England"
-import France from "<diplomacy>/components/Map/France"
+import OrdersTab from "./OrdersTab";
+import TabbedView, { Tab } from "<diplomacy>/components/TabbedView";
+import Map from "<diplomacy>/components/Map";
+import Oceans from "<diplomacy>/components/Map/Oceans";
+import England from "<diplomacy>/components/Map/England";
+import France from "<diplomacy>/components/Map/France";
 
 const GAME_FIXTURE = {
   name: "The Corona War",
@@ -21,39 +21,43 @@ const GAME_FIXTURE = {
     {
       name: "Spring 1901",
       boardState: {},
-      moves: []
+      moves: [],
     },
     {
       name: "Fall 1901",
       boardState: {},
-      moves: []
+      moves: [],
     },
     {
       name: "Build",
       boardState: {},
-      moves: []
+      moves: [],
     },
     {
       name: "Spring 1902",
       boardState: {},
-      moves: []
+      moves: [],
     },
     {
       name: "Fall 1902",
       boardState: {},
-      moves: []
-    }
-  ]
-}
+      moves: [],
+    },
+  ],
+};
 
 const ORDERS_FIXTURE = [
   { province: England.Clyde, hold: true },
   { province: England.Wales, to: France.Brest },
-  { province: England.Yorkshire, support: England.Edinburgh, to: England.Clyde },
+  {
+    province: England.Yorkshire,
+    support: England.Edinburgh,
+    to: England.Clyde,
+  },
   { province: Oceans.EnglishChannel, convoy: England.Wales, to: France.Brest },
-]
+];
 
-const Game = ({...props}) => {
+const Game = ({ ...props }) => {
   const [content, setContent] = useState("");
   const game = GAME_FIXTURE;
   const orders = ORDERS_FIXTURE;
@@ -62,9 +66,11 @@ const Game = ({...props}) => {
     <PageContainer page={Pages.Game}>
       <div className="flex items-baseline">
         <div className="w-1/2">
-          <div className="text-3xl font-copperplate bold truncate">{game.name}</div>
+          <div className="text-3xl font-copperplate bold truncate">
+            {game.name}
+          </div>
           <span>Phase ends in {game.phaseEnd}.</span>
-          <div style={{width: 500, border: "1px solid black"}}>
+          <div style={{ width: 500, border: "1px solid black" }}>
             <Map setTooltipContent={setContent} orders={orders} />
             <ReactTooltip>{content}</ReactTooltip>
           </div>
@@ -85,6 +91,6 @@ const Game = ({...props}) => {
       </div>
     </PageContainer>
   );
-}
+};
 
-export default Game
+export default Game;

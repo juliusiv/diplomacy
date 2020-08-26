@@ -10,13 +10,7 @@ const Turkey = {
   [Smyrna.properties.id]: Smyrna.properties.id,
   [Syria.properties.id]: Syria.properties.id,
   [Armenia.properties.id]: Armenia.properties.id,
-}
+};
 
-export default Turkey
-export {
-  Constantinople,
-  Ankara,
-  Smyrna,
-  Syria,
-  Armenia,
-}
+export default Turkey;
+export { Constantinople, Ankara, Smyrna, Syria, Armenia };

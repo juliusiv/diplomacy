@@ -26,7 +26,7 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
-config :diplomacy, Diplomacy.Mailer,
+config :diplomacy, Diplomacy.Notifier.Mailer,
   adapter: Swoosh.Adapters.Sendgrid,
   api_key: "my-api-key"
 

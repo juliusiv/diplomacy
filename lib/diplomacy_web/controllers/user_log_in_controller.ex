@@ -10,6 +10,8 @@ defmodule DiplomacyWeb.UserLogInController do
 
     if user do
       UserAuth.log_in_user(conn, user, user_params)
+      |> put_status(200)
+      |> json(%{})
     else
       conn |> put_status(403)
     end

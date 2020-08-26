@@ -1,4 +1,3 @@
-  
 import PageContainer from "./PageContainer";
 
 export { PageContainer as default };

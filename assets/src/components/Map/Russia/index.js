@@ -13,16 +13,8 @@ const Russia = {
   [StPetersburg.properties.id]: StPetersburg.properties.id,
   [Ukraine.properties.id]: Ukraine.properties.id,
   [Sevastopol.properties.id]: Sevastopol.properties.id,
-  [Moscow.properties.id]: Moscow.properties.id
-}
+  [Moscow.properties.id]: Moscow.properties.id,
+};
 
-export default Russia
-export {
-  Finland,
-  Livonia,
-  Warsaw,
-  StPetersburg,
-  Ukraine,
-  Sevastopol,
-  Moscow
-}
+export default Russia;
+export { Finland, Livonia, Warsaw, StPetersburg, Ukraine, Sevastopol, Moscow };

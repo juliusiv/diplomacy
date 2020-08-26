@@ -11,15 +11,8 @@ const Italy = {
   [Tuscany.properties.id]: Tuscany.properties.id,
   [Apulia.properties.id]: Apulia.properties.id,
   [Venice.properties.id]: Venice.properties.id,
-  [Piedmont.properties.id]: Piedmont.properties.id
-}
+  [Piedmont.properties.id]: Piedmont.properties.id,
+};
 
-export default Italy
-export {
-  Naples,
-  Rome,
-  Tuscany,
-  Apulia,
-  Venice,
-  Piedmont
-}
+export default Italy;
+export { Naples, Rome, Tuscany, Apulia, Venice, Piedmont };

@@ -17,8 +17,8 @@ export const Oceans = {
   IonianSea: "IONIAN_SEA",
   BlackSea: "BLACK_SEA",
   AegeanSea: "AEGEAN_SEA",
-  EasternMediterranean: "EASTERN_MEDITERRANEAN"
-}
+  EasternMediterranean: "EASTERN_MEDITERRANEAN",
+};
 
 export const Germany = {
   Prussia: "PRUSSIA",
@@ -26,8 +26,8 @@ export const Germany = {
   Munich: "MUNICH",
   Berlin: "BERLIN",
   Kiel: "KIEL",
-  Silesia: "SILESIA"
-}
+  Silesia: "SILESIA",
+};
 
 export const Italy = {
   Piedmont: "PIEDMONT",
@@ -35,15 +35,15 @@ export const Italy = {
   Tuscany: "TUSCANY",
   Venice: "VENICE",
   Apulia: "APULIA",
-  Naples: "NAPLES"
-}
+  Naples: "NAPLES",
+};
 
 export const Austria = {
   Galicia: "GALICIA",
   VIENNA: "VIENNA",
   Budapest: "BUDAPEST",
-  Tyrolia: "TYROLIA"
-}
+  Tyrolia: "TYROLIA",
+};
 
 export const Russia = {
   // Finland: "FINLAND",
@@ -52,23 +52,23 @@ export const Russia = {
   Warsaw: "WARSAW",
   Ukraine: "UKRAINE",
   Sevastapol: "SEVASTAPOL",
-  Moscow: "MOSCOW"
-}
+  Moscow: "MOSCOW",
+};
 
 export const Turkey = {
   Constantinople: "CONSTANTINOPLE",
   Smyrna: "SMYRNA",
   Armenia: "ARMENIA",
   Syria: "SYRIA",
-  Ankara: "ANKARA"
-}
+  Ankara: "ANKARA",
+};
 
 export const Unoccupied = {
   Holland: "HOLLAND",
   Greece: "GREECE",
   Serbia: "SERBIA",
   Bulgaria: "BULGARIA",
-  Rumania: "RUMANIA"
-}
+  Rumania: "RUMANIA",
+};
 
-export const label = province => province;
+export const label = (province) => province;

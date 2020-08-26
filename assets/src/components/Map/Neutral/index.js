@@ -19,10 +19,10 @@ const Neutral = {
   [Sardinia.properties.id]: Sardinia.properties.id,
   [Sicily.properties.id]: Sicily.properties.id,
   [Switzerland.properties.id]: Switzerland.properties.id,
-  [Ussr.properties.id]: Ussr.properties.id
-}
+  [Ussr.properties.id]: Ussr.properties.id,
+};
 
-export default Neutral
+export default Neutral;
 export {
   Corse,
   Crete,
@@ -33,5 +33,5 @@ export {
   Sardinia,
   Sicily,
   Switzerland,
-  Ussr
-}
+  Ussr,
+};

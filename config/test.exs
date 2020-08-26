@@ -15,7 +15,7 @@ config :diplomacy, Diplomacy.Repo,
 # you can enable the server option below.
 config :diplomacy, DiplomacyWeb.Endpoint,
   http: [port: 4002],
-  server: false
+  server: true
 
 # Print only warnings and errors during test
 config :logger, level: :warn

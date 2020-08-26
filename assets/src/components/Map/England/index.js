@@ -11,15 +11,8 @@ const England = {
   [Liverpool.properties.id]: Liverpool.properties.id,
   [London.properties.id]: London.properties.id,
   [Wales.properties.id]: Wales.properties.id,
-  [Yorkshire.properties.id]: Yorkshire.properties.id
-}
+  [Yorkshire.properties.id]: Yorkshire.properties.id,
+};
 
-export default England
-export {
-  Clyde,
-  Edinburgh,
-  Liverpool,
-  London,
-  Wales,
-  Yorkshire
-}
+export default England;
+export { Clyde, Edinburgh, Liverpool, London, Wales, Yorkshire };

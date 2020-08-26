@@ -11,15 +11,8 @@ const Austria = {
   [Tyrolia.properties.id]: Tyrolia.properties.id,
   [Vienna.properties.id]: Vienna.properties.id,
   [Budapest.properties.id]: Budapest.properties.id,
-  [Galicia.properties.id]: Galicia.properties.id
-}
+  [Galicia.properties.id]: Galicia.properties.id,
+};
 
-export default Austria
-export {
-  Bohemia,
-  Trieste,
-  Tyrolia,
-  Vienna,
-  Budapest,
-  Galicia
-}
+export default Austria;
+export { Bohemia, Trieste, Tyrolia, Vienna, Budapest, Galicia };

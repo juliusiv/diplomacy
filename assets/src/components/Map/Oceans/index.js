@@ -43,7 +43,7 @@ const Oceans = {
   IonianSea: "IONIAN_SEA",
   BlackSea: "BLACK_SEA",
   AegeanSea: "AEGEAN_SEA",
-  EasternMediterranean: "EASTERN_MEDITERRANEAN"
-}
+  EasternMediterranean: "EASTERN_MEDITERRANEAN",
+};
 
-export default Oceans
+export default Oceans;

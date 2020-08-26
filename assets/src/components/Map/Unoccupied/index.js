@@ -28,9 +28,9 @@ const Unoccupied = {
   [Spain.properties.id]: Spain.properties.id,
   [Sweden.properties.id]: Sweden.properties.id,
   [Tunis.properties.id]: Tunis.properties.id,
-}
+};
 
-export default Unoccupied
+export default Unoccupied;
 export {
   Albania,
   Belgium,
@@ -46,4 +46,4 @@ export {
   Spain,
   Sweden,
   Tunis,
-}
+};

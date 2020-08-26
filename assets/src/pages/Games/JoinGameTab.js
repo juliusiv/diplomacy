@@ -7,11 +7,9 @@ const JoinGameTab = ({ ...props }) => {
   return (
     <div>
       <TextInput label="Game ID" placeholder={"ABC123"} className="mr-3 mb-3" />
-      <Button>
-        Join
-      </Button>
+      <Button>Join</Button>
     </div>
-  )
-}
+  );
+};
 
 export default JoinGameTab;

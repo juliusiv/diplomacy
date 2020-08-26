@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import useSession from "react-session-hook";
 
 import PageContainer, { Pages } from "<diplomacy>/containers/PageContainer";
 import TabbedView, { Tab } from "<diplomacy>/components/TabbedView";
 
-import ActiveGamesTab from "./ActiveGamesTab"
-import CreateGameTab from "./CreateGameTab"
-import JoinGameTab from "./JoinGameTab"
+import ActiveGamesTab from "./ActiveGamesTab";
+import CreateGameTab from "./CreateGameTab";
+import JoinGameTab from "./JoinGameTab";
 
 const GAMES_FIXTURE = [
   {
@@ -14,27 +13,27 @@ const GAMES_FIXTURE = [
     phase: "Build",
     phaseEnd: "1 hour",
     id: "a",
-    ordersRemaining: "None"
+    ordersRemaining: "None",
   },
   {
-    name: "Battle of the Covid with a Very Very Very Long Name and Stuff Like That",
+    name:
+      "Battle of the Covid with a Very Very Very Long Name and Stuff Like That",
     phase: "Retreat",
     phaseEnd: "10 hours",
     id: "b",
-    ordersRemaining: "None"
+    ordersRemaining: "None",
   },
   {
     name: "Covid Crusade",
     phase: "Move",
     phaseEnd: "30 minutes",
     id: "c",
-    ordersRemaining: "None"
-  }
-]
+    ordersRemaining: "None",
+  },
+];
 
-const Games = ({...props}) => {
-  const [games, setGames] = useState(GAMES_FIXTURE)
-  const session = useSession();
+const Games = ({ ...props }) => {
+  const [games, setGames] = useState(GAMES_FIXTURE);
 
   // useEffect(async () => {
   //   const result = await axios(
@@ -60,7 +59,7 @@ const Games = ({...props}) => {
         </TabbedView>
       </div>
     </PageContainer>
-  )
-}
+  );
+};
 
-export default Games
+export default Games;
