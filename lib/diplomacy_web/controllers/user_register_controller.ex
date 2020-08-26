@@ -1,11 +1,11 @@
 defmodule DiplomacyWeb.UserRegisterController do
   use DiplomacyWeb, :controller
-  use DiplomacyWeb.Registry
-  # use Substrate.Controller
+  use DiplomacyWeb, :registry
 
   alias Diplomacy.Accounts
   alias DiplomacyWeb.UserAuth
 
+  # @doc handles(path: "/users/register", method: :post)
   @doc DiplomacyWeb.Registry.handles(path: "/users/register", method: :post)
   # @doc handles(path: "/users/register", method: :post)
   # @doc handles: %{

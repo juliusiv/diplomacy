@@ -19,15 +19,8 @@ defmodule DiplomacyWeb.Router do
   end
 
   Substrate.Registry.collect_all do
-    # %{path: "/api/users/register", method: :post}
     entry(DiplomacyWeb.UserRegisterController, :register_user)
-    # DiplomacyWeb.UserRegisterController.entry(:stuff)
   end
-  # collect_all do
-  #   # %{path: "/api/users/register", method: :post}
-  #   entry(DiplomacyWeb.UserRegisterController, :register_user)
-  #   # DiplomacyWeb.UserRegisterController.entry(:stuff)
-  # end
 
   scope "/api", DiplomacyWeb do
     pipe_through [:browser, :redirect_if_user_is_authenticated]

@@ -1,76 +1,26 @@
 defmodule Substrate.Registry do
   defmacro __using__(opts) do
-    {prefix, opts} = Keyword.pop(opts, :prefix, "")
+    prefix = Keyword.get(opts, :prefix, "")
 
     quote do
       use Substrate.Controller
+      alias Substrate.Entry
+
+      defmacro __using__(_opts) do
+        quote do
+          use Substrate.Controller
+        end
+      end
 
       def handles(opts) do
         path = Keyword.fetch!(opts, :path)
         path = Path.join(unquote(prefix), path)
-        method = Keyword.fetch!(opts, :method)
+        method = Keyword.get(opts, :method, :get)
 
-        [handles: %{path: path, method: method}]
+        [handles: %Entry{path: path, method: method}]
       end
     end
-
-    # defmacro handles(opts) do
-    #   # path = Keyword.fetch!(opts, :path)
-    #   # method = Keyword.fetch!(opts, :method)
-    #   path = "/users/register"
-    #   method = :post
-
-    #   # get the function this applies to
-    #   func_name = :register_user
-
-    #   substrate_registry_definition = %{
-    #     prefix: prefix,
-    #     method: method,
-    #     alias: alias,
-    #     path: path
-    #   }
-
-    #   # handler = generate_handler(substrate_registry_definition, controller_func)
-
-    #   quote do
-    #     @doc """
-    #     A generated function that defines a macro that generates the Phoenix.Router entry for this
-    #     handler function.
-    #     """
-    #     IO.inspect(unquote(func_name))
-    #     def entry(func_name) do
-    #       post unquote(path), unquote(alias), func_name
-    #       # unquote(method) unquote(path), unquote(alias), func_name
-    #     end
-    #   end
-    # end
   end
-
-  defp generate_handler(substrate_registry_definition, controller_func) do
-    controller_func
-  end
-
-  # defmacro generate_handler(substrate_registry_definition, func_name) do
-  #   # macro code
-  #   def entry(:func_name) do
-      
-  #   end
-  # end
-
-  # @doc """
-  # Creates a function that registers 
-  # """
-  # defmacro registry(opts) do
-  #   {name, opts} = Keyword.pop(opts, :name, :registry)
-  #   {prefix, opts} = Keyword.pop(opts, :prefix, "")
-  #   {alias, opts} = Keyword.pop(opts, :alias, "")
-
-  #   quote do
-  #     def registry_handles(opts) do
-        
-  #     end
-  #   end
-  # end
 
   @doc """
   Mostly just a helper make it nice to define entries.

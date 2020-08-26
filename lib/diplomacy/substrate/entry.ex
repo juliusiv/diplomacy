@@ -6,7 +6,5 @@ defmodule Substrate.Entry do
   @type t :: %__MODULE__{
     method: :get | :post | :patch | :put | :delete | :head,
     path: String.t(),
-    # alias: atom(),
-    # func: f()
   }
 end
