@@ -1,6 +1,7 @@
 defmodule DiplomacyWeb.Router do
   use DiplomacyWeb, :router
-  use DiplomacyWeb, :registry
+  # alias DiplomacyWeb.Registry
+  require Substrate.Registry
 
   import DiplomacyWeb.UserAuth
 
@@ -17,9 +18,16 @@ defmodule DiplomacyWeb.Router do
     plug :accepts, ["json"]
   end
 
-  Registry.register do
-    UserRegisterController.entry(:register_user)
+  Substrate.Registry.collect_all do
+    # %{path: "/api/users/register", method: :post}
+    entry(DiplomacyWeb.UserRegisterController, :register_user)
+    # DiplomacyWeb.UserRegisterController.entry(:stuff)
   end
+  # collect_all do
+  #   # %{path: "/api/users/register", method: :post}
+  #   entry(DiplomacyWeb.UserRegisterController, :register_user)
+  #   # DiplomacyWeb.UserRegisterController.entry(:stuff)
+  # end
 
   scope "/api", DiplomacyWeb do
     pipe_through [:browser, :redirect_if_user_is_authenticated]

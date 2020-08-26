@@ -1,11 +1,16 @@
 defmodule DiplomacyWeb.UserRegisterController do
   use DiplomacyWeb, :controller
-  use DiplomacyWeb, :registry
+  # use DiplomacyWeb.Registry
+  use Substrate.Controller
 
   alias Diplomacy.Accounts
   alias DiplomacyWeb.UserAuth
 
-  @doc registry.handles(path: "/users/register")
+  # @doc handles(path: "/users/register")
+  @doc handles: %{
+    path: "/api/users/register",
+    method: :post
+  }
   def register_user(conn, %{"user" => user_params}) do
     case Accounts.register_user(user_params) do
       {:ok, user} ->
@@ -20,15 +25,19 @@ defmodule DiplomacyWeb.UserRegisterController do
         |> UserAuth.log_in_user(user)
         |> json(%{})
 
-      {:error, %Ecto.Changeset{errors: [email: _]} = changeset} ->
+      {:error, %Ecto.Changeset{errors: [email: _]} = _changeset} ->
         conn
         |> put_status(409)
         |> json(%{})
 
-      {:error, %Ecto.Changeset{} = changeset} ->
+      {:error, %Ecto.Changeset{} = _changeset} ->
         conn
         |> put_status(400)
         |> json(%{})
     end
+  end
+
+  def stuff(conn, _params) do
+    conn
   end
 end
