@@ -13,7 +13,7 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@vx/pattern": "0.0.195",
     "autoprefixer": "^9.8.6",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "axios-hooks": "^2.1.0",
     "elliptic": "^6.5.3",
     "js-cookie": "^2.2.1",
